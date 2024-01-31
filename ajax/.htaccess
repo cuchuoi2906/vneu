@@ -1,0 +1,15 @@
+AddDefaultCharset Utf-8
+#php_flag display_errors On
+#php_value register_long_arrays On
+
+<FilesMatch "error_log|\.(htaccess|htpasswd|ini|phps|fla|psd|log|sh)$">
+	Order deny,allow
+	Deny from all
+</FilesMatch>
+
+RewriteEngine on
+RewriteBase /ajax/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !server-status
+RewriteRule !\.(js|ico|gif|jpg|JPG|png|css|swf|xls|doc|ppt|wmv|avi|xml|htc|txt|flv)$ index.php [L,QSA]
