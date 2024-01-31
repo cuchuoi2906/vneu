@@ -1,0 +1,12 @@
+#User-agent: *
+#Disallow: /
+
+#User-agent: *
+#Allow: /
+#Disallow: /ocm/
+#Disallow: /ad/
+#Disallow: /tools/
+#Disallow: /webservices/
+#Disallow: /crondaemon/
+#Disallow: /*recommend-video_news
+#Sitemap: https://www.vneu.vn/sitemap-index.xml
