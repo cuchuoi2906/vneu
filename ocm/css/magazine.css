@@ -1,0 +1,512 @@
+/*mixin*/
+/*@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+     -moz-box-sizing: $box-model; // Firefox <= 19
+          box-sizing: $box-model;
+}*/
+.wrapper, .wrapper *, .wrapper :after, .wrapper :before, .btn, .frm input,
+.frm select,
+.frm textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.list, .item, .file-item {
+  position: relative; }
+
+/*common */
+.wrapper {
+  margin: 0 auto;
+  position: relative; }
+
+.text-muted {
+  color: #868e96 !important; }
+
+.hidden {
+  display: none; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.ovl-y {
+  overflow-y: auto; }
+
+.ovl-hidden {
+  overflow: hidden; }
+
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
+.center-block {
+  display: table;
+  margin: 0 auto; }
+
+.block {
+  display: block; }
+
+.fluid {
+  width: 100% !important; }
+
+.bd-0 {
+  border: none !important; }
+
+.p-6, .control-group {
+  padding: 0 6px; }
+
+.p-lr-6 {
+  padding: 0 6px; }
+
+.m-tb-10 {
+  margin: 10px 0; }
+
+.m-0 {
+  margin: 0; }
+
+/*grid*/
+.row {
+  letter-spacing: -0.31em;
+  /* Webkit: collapse white-space between units */
+  *letter-spacing: normal;
+  /* reset IE < 8 */
+  *word-spacing: -0.43em;
+  /* IE < 8: collapse white-space between units */
+  text-rendering: optimizespeed;
+  /* Webkit: fixes text-rendering: optimizeLegibility */ }
+
+.row {
+  /* Use flexbox when possible to avoid `letter-spacing` side-effects. */
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  /* Prevents distributing space between rows */
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start; }
+
+/* IE10 display: -ms-flexbox (and display: flex in IE 11) does not work inside a table; fall back to block and rely on font hack */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  table .row {
+    display: block; } }
+/* Opera as of 12 on Windows needs word-spacing.
+   The ".opera-only" selector is used to prevent actual prefocus styling
+   and is not required in markup.
+*/
+.opera-only :-o-prefocus,
+.row {
+  word-spacing: -0.43em; }
+
+.col {
+  display: inline-block;
+  *display: inline;
+  /* IE < 8: fake inline-block */
+  zoom: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto; }
+
+/*grid unit*/
+.col-1,
+.col-1-1,
+.col-1-2,
+.col-1-3,
+.col-1-4,
+.col-1-5,
+.col-2-5,
+.col-3-5,
+.col-4-5,
+.col-5-5,
+.col-2-3,
+.col-3-4,
+.col-1-6,
+.col-5-6,
+.col-1-12,
+.col-11-12 {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto; }
+.col-1-12 {
+  width: 8.3333%;
+  *width: 8.3023%;
+}
+.col-11-12 {
+  width: 91.6667%;
+  *width: 91.6357%;
+}
+.col-1-6 {
+  width: 16.6667%;
+  *width: 16.6357%; }
+
+.col-5-6 {
+  width: 83.3333%;
+  *width: 83.3023%; }
+
+.col-1-4 {
+  width: 25%;
+  *width: 24.9690%; }
+
+.col-3-4 {
+  width: 75%;
+  *width: 74.9690%; }
+
+.col-1-3 {
+  width: 33.3333%;
+  *width: 33.3023%; }
+
+.col-1-2 {
+  width: 50%;
+  *width: 49.9690%; }
+
+.col-1-5 {
+  width: 20%;
+  *width: 19.9690%; }
+
+.col-2-5 {
+  width: 40%;
+  *width: 39.9690%; }
+
+.col-3-5 {
+  width: 60%;
+  *width: 59.9690%; }
+
+.col-4-5 {
+  width: 80%;
+  *width: 79.9690%; }
+
+.col-1,
+.col-1-1,
+.col-5-5 {
+  width: 100%; }
+
+.col-2-3 {
+  width: 66.6667%;
+  *width: 66.6357%; }
+
+.btn-hover, .btn:hover, .btn:focus {
+  filter: alpha(opacity=90);
+  background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1));
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.1)); }
+
+.btn-active, .btn:active {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+  border-color: #000 \9; }
+
+.btn-disabled, .btn-disabled:hover, .btn-disabled:focus, .btn-disabled:active, .btn[disabled] {
+  border: none;
+  background-image: none;
+  filter: alpha(opacity=40);
+  opacity: 0.40;
+  cursor: not-allowed;
+  box-shadow: none;
+  pointer-events: none; }
+
+.btn, .dm-uploader {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/*button*/
+.btn {
+  display: inline-block;
+  zoom: 1;
+  line-height: normal;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-drag: none;
+  font-family: inherit;
+  font-size: 100%;
+  padding: 0.5em 1em;
+  color: #444;
+  /* rgba not supported (IE 8) */
+  color: rgba(0, 0, 0, 0.8);
+  /* rgba supported */
+  border: 1px solid #999;
+  /*IE 6/7/8*/
+  border: none rgba(0, 0, 0, 0);
+  /*IE9 + everything else*/
+  background-color: #E6E6E6;
+  text-decoration: none;
+  border-radius: 2px;
+  /* Firefox: Get rid of the inner focus border */ }
+  .btn::-moz-focus-inner {
+    padding: 0;
+    border: 0; }
+  .btn:focus {
+    outline: 0; }
+
+.btn-block {
+  display: block;
+  width: 100%; }
+
+.btn-primary {
+  color: #fff !important;
+  background-color: #007bff;
+  border-color: #007bff; }
+
+/*btn group*/
+/*.btn-group {
+    @extend %row-style;
+    .btn {
+        letter-spacing: normal;
+        word-spacing: normal;
+        vertical-align: top;
+        text-rendering: auto;
+    }
+}
+.opera-only :-o-prefocus,
+.btn-group {
+    word-spacing: -0.43em;
+}*/
+/*form*/
+.frm input,
+.frm select,
+.frm textarea {
+  padding: 0.5em 0.6em !important;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 1px;
+  vertical-align: middle; }
+  .frm input[disabled],
+  .frm select[disabled],
+  .frm textarea[disabled] {
+    cursor: not-allowed;
+    background-color: #eaeded;
+    color: #cad2d3; }
+  .frm input:focus,
+  .frm select:focus,
+  .frm textarea:focus {
+    outline: 0;
+    border-color: #129FEA; }
+.frm input[type="file"]:focus,
+.frm input[type="radio"]:focus,
+.frm input[type="checkbox"]:focus {
+  outline: thin solid #129FEA;
+  outline: 1px auto #129FEA; }
+.frm .frm-checkbox, .frm .frm-radio {
+  margin: 0.5em 0;
+  display: block; }
+.frm select {
+  /* Normalizes the height; padding is not sufficient. */
+  /*height: 2.25em;*/
+  border: 1px solid #ccc;
+  background-color: white; }
+  .frm select[multiple] {
+    height: auto; }
+.frm label {
+  margin: 0.6em 0;
+  font-weight: 700; }
+.frm legend {
+  display: block;
+  width: 100%;
+  padding: 0.3em 0;
+  margin-bottom: 0.3em;
+  color: #333;
+  border-bottom: 1px solid #e5e5e5; }
+
+.frm-stacked input, .frm-stacked select, .frm-stacked label, .frm-stacked textarea {
+  display: block;
+  /*width: 100%;*/
+  margin: 0.5em 0; }
+
+.frm-aligned input, .frm-aligned select, .frm-aligned textarea, .frm-aligned .help-inline, .frm-aligned .frm-msg-inline {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle; }
+.frm-aligned textarea {
+  vertical-align: top; }
+.frm-aligned .control-group label {
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+  width: 10em;
+  /*margin: 0 1em 0 0;*/ }
+.frm-aligned label {
+  vertical-align: middle;
+  display: table; }
+
+.control-group {
+  margin-bottom: 0.5em; }
+
+/*.controls {
+    margin: 1.5em 0 0 11em;
+}*/
+.frm .help-inline,
+.frm-msg-inline {
+  display: inline-block;
+  padding-left: 0.3em;
+  color: #666;
+  vertical-align: middle;
+  font-size: 0.875em; }
+
+/* Block help for forms */
+.frm-msg {
+  display: block;
+  color: #666;
+  font-size: 0.875em; }
+
+/**/
+/*uploader*/
+.dm-uploader {
+  /*padding: 20px;*/
+  /*border: 2px dashed #ddd;*/
+  cursor: pointer;
+  -webkit-touch-callout: none; }
+  .dm-uploader h3 {
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 500; }
+  .dm-uploader .btn {
+    position: relative;
+    overflow: hidden;
+    /*padding:5px;*/
+    max-width: 400px;
+    margin: 0 auto; }
+    .dm-uploader .btn input[type=file] {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0;
+      border: solid transparent;
+      width: 100%;
+      opacity: 0;
+      cursor: pointer; }
+    .dm-uploader .btn .btn-title {
+      color: #fff;
+      /*font-size: 16px*/ }
+
+/*panel*/
+.panel .head {
+  position: relative;
+  min-height: 30px;
+  border-bottom: 1px solid #ddd; }
+  .panel .head .head-title {
+    line-height: 28px;
+    font-weight: 700; }
+  .panel .head .controls {
+    position: absolute;
+    right: 0;
+    top: 0; }
+
+/*list*/
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /*@extend %border-box;*/ }
+
+.item {
+  padding: 0;
+  margin: 0;
+  height: 100%; }
+
+.item-link, .item-heading {
+  display: block;
+  text-decoration: none;
+  white-space: nowrap; }
+
+.list-horizontal {
+  width: 100%;
+  white-space: nowrap; }
+
+.file-item {
+  padding: 4px;
+  border: 1px solid #ddd;
+  margin: 2px 0; }
+  .file-item .close {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    bottom: 0;
+    line-height: 24px;
+    color: #333; }
+    .file-item .close:hover {
+      color: #5aa101; }
+
+.preview-iframe {
+  transition: transform .2s; }
+
+.preview-fluid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 400px !important;
+  z-index: 1; }
+
+.close-preview-iframe {
+  position: fixed;
+  left: 0;
+  top: 405px; }
+
+.magazine-content-load-zone .cke_toolgroup {
+  margin: 1px 2px 1px 0 !important;
+}
+.magazine-content-load-zone .cke_top {
+  padding:0 !important;
+}
+.preview-iframe-wrapper {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden !important;
+  overflow-y:scroll !important;
+  min-height: 420px !important;
+  /*max-height: 500px;*/
+}
+.preview-iframe-wrapper .preview-iframe {
+  width: 1366px;
+  /*height: 2000px;*/
+  transform: scale(0.5);
+  overflow: hidden;
+  transform-origin: 0 0;
+}
+.preview-iframe-wrapper::-webkit-scrollbar {
+display: none;
+}
+.preview-iframe-wrapper.preview-history {
+  max-height: 800px;
+}
+.preview-iframe-wrapper.preview-history .preview-iframe {
+  transform: scale(0.9);
+}
+.mz-metadata {
+  margin:3px 0;
+  position: relative;
+}
+.mz-metadata > * {
+  font-size: 11px;
+}
+.m-tb-5 {
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+.error-map-element {
+  font-size: 11px;
+}
+.h12 {
+  height: 10px;
+}
+.image-info * {
+  font-size: 12px;
+  font-weight: 700;
+}
+/*# sourceMappingURL=magazine.css.map */

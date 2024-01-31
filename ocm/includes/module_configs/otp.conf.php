@@ -1,0 +1,3 @@
+<?php
+$TOKEN_INITALIZATION_KEY = 'KJ45D26SP54IGXN2';
+$THONG_BAO_SAI_TOKEN_KEY = 'Token key không chính xác';

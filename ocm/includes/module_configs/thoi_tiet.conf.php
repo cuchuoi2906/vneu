@@ -1,0 +1,77 @@
+<?php
+//	mảng mã vùng (tỉnh thành) riêng cho trang thời tiết
+$arr_tinh_thanh = array(
+	array('c_ma'=>12, 'c_ten'=>'TP.Hồ Chí Minh', 'c_ten_khong_dau'=>'tp ho chi minh', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/23/44/map/Default.aspx'),
+	array('c_ma'=>7, 'c_ten'=>'Hà Nội', 'c_ten_khong_dau'=>'ha noi', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/19/58/map/Default.aspx'),
+	array('c_ma'=>9, 'c_ten'=>'Đà Nẵng', 'c_ten_khong_dau'=>'da nang', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/21/92/map/Default.aspx'),
+	array('c_ma'=>56, 'c_ten'=>'Cần Thơ', 'c_ten_khong_dau'=>'can tho', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/23/56/map/Default.aspx'),
+	array('c_ma'=>10, 'c_ten'=>'Nha Trang', 'c_ten_khong_dau'=>'nha trang', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/21/37/map/Default.aspx'),
+	array('c_ma'=>6, 'c_ten'=>'Hải Phòng', 'c_ten_khong_dau'=>'hai phong', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/19/88/map/Default.aspx'),
+	array('c_ma'=>8, 'c_ten'=>'Vinh', 'c_ten_khong_dau'=>'vinh', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/20/111/map/Default.aspx'),
+	array('c_ma'=>4, 'c_ten'=>'Sơn La', 'c_ten_khong_dau'=>'son la', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/18/78/map/Default.aspx'),
+	array('c_ma'=>5, 'c_ten'=>'Việt Trì', 'c_ten_khong_dau'=>'viet tri', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/19/76/map/Default.aspx'),
+	array('c_ma'=>11, 'c_ten'=>'Pleicu', 'c_ten_khong_dau'=>'pleicu', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/22/41/map/Default.aspx'),
+	array('c_ma'=>96, 'c_ten'=>'An Giang', 'c_ten_khong_dau'=>'an giang', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/23/96/map/Default.aspx'),
+	array('c_ma'=>86, 'c_ten'=>'Bắc cạn', 'c_ten_khong_dau'=>'bac can', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/19/86/map/Default.aspx'),
+	array('c_ma'=>80, 'c_ten'=>'Bắc Giang', 'c_ten_khong_dau'=>'bac giang', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/19/80/map/Default.aspx'),
+	array('c_ma'=>59, 'c_ten'=>'Bạc Liêu', 'c_ten_khong_dau'=>'bac lieu', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/23/59/map/Default.aspx'),
+	array('c_ma'=>81, 'c_ten'=>'Bắc Ninh', 'c_ten_khong_dau'=>'bac ninh', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/19/81/map/Default.aspx'),
+	array('c_ma'=>53, 'c_ten'=>'Bến Tre', 'c_ten_khong_dau'=>'ben tre', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/23/53/map/Default.aspx'),
+	array('c_ma'=>94, 'c_ten'=>'Bình Định', 'c_ten_khong_dau'=>'binh dinh', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/21/94/map/Default.aspx'),
+	array('c_ma'=>45, 'c_ten'=>'Bình Dương', 'c_ten_khong_dau'=>'binh duong', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/23/45/map/Default.aspx'),
+	array('c_ma'=>60, 'c_ten'=>'Bình Phước', 'c_ten_khong_dau'=>'binh phuoc', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/23/60/map/Default.aspx'),
+	array('c_ma'=>39, 'c_ten'=>'Bình Thuận', 'c_ten_khong_dau'=>'binh thuan', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/21/39/map/Default.aspx'),
+	array('c_ma'=>74, 'c_ten'=>'Cà Mau', 'c_ten_khong_dau'=>'ca mau', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/23/74/map/Default.aspx'),
+	array('c_ma'=>83, 'c_ten'=>'Cao Bằng', 'c_ten_khong_dau'=>'cao bang', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/19/83/map/Default.aspx'),
+	array('c_ma'=>43, 'c_ten'=>'Đà Lạt', 'c_ten_khong_dau'=>'da lat', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/22/43/map/Default.aspx'),
+	array('c_ma'=>42, 'c_ten'=>'Đắk Lắk', 'c_ten_khong_dau'=>'dak lak', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/22/42/map/Default.aspx'),
+	array('c_ma'=>71, 'c_ten'=>'Đắk Nông', 'c_ten_khong_dau'=>'dak nong', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/22/71/map/Default.aspx'),
+	array('c_ma'=>70, 'c_ten'=>'Điện Biên', 'c_ten_khong_dau'=>'dien bien', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/18/70/map/Default.aspx'),
+	array('c_ma'=>62, 'c_ten'=>'Đồng Nai', 'c_ten_khong_dau'=>'dong nai', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/23/62/map/Default.aspx'),
+	array('c_ma'=>51, 'c_ten'=>'Đồng Tháp', 'c_ten_khong_dau'=>'dong thap', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/23/51/map/Default.aspx'),
+	array('c_ma'=>68, 'c_ten'=>'Hà Giang', 'c_ten_khong_dau'=>'ha giang', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/19/68/map/Default.aspx'),
+	array('c_ma'=>65, 'c_ten'=>'Hà Tây', 'c_ten_khong_dau'=>'ha tay', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/19/65/map/Default.aspx'),
+	array('c_ma'=>28, 'c_ten'=>'Hà Tĩnh', 'c_ten_khong_dau'=>'ha tinh', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/20/28/map/Default.aspx'),
+	array('c_ma'=>48, 'c_ten'=>'Hải Dương', 'c_ten_khong_dau'=>'hai duong', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/19/48/map/Default.aspx'),
+	array('c_ma'=>54, 'c_ten'=>'Hậu Giang', 'c_ten_khong_dau'=>'hau giang', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/23/54/map/Default.aspx'),
+	array('c_ma'=>444, 'c_ten'=>'Hòa Bình', 'c_ten_khong_dau'=>'hoa binh', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/18/4/map/Default.aspx'),
+	array('c_ma'=>63, 'c_ten'=>'Hưng Yên', 'c_ten_khong_dau'=>'hung yen', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/19/63/map/Default.aspx'),
+	array('c_ma'=>73, 'c_ten'=>'Kiên Giang', 'c_ten_khong_dau'=>'kien giang', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/23/73/map/Default.aspx'),
+	array('c_ma'=>40, 'c_ten'=>'Kon Tum', 'c_ten_khong_dau'=>'kon tum', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/22/40/map/Default.aspx'),
+	array('c_ma'=>127, 'c_ten'=>'Lai Châu', 'c_ten_khong_dau'=>'lai chau', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/18/127/map/Default.aspx'),
+	array('c_ma'=>82, 'c_ten'=>'Lạng Sơn', 'c_ten_khong_dau'=>'lang son', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/19/82/map/Default.aspx'),
+	array('c_ma'=>69, 'c_ten'=>'Lào Cai', 'c_ten_khong_dau'=>'lao cai', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/18/69/map/Default.aspx'),
+	array('c_ma'=>50, 'c_ten'=>'Long An', 'c_ten_khong_dau'=>'long an', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/23/50/map/Default.aspx'),
+	array('c_ma'=>64, 'c_ten'=>'Nam Định', 'c_ten_khong_dau'=>'nam dinh', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/19/64/map/Default.aspx'),
+	array('c_ma'=>46, 'c_ten'=>'Ninh Bình', 'c_ten_khong_dau'=>'ninh binh', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/19/46/map/Default.aspx'),
+	array('c_ma'=>100, 'c_ten'=>'Ninh Thuận', 'c_ten_khong_dau'=>'ninh thuan', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/18/127/map/Default.aspx'),
+	array('c_ma'=>49, 'c_ten'=>'Phủ Lý', 'c_ten_khong_dau'=>'phu ly', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/19/49/map/Default.aspx'),
+	array('c_ma'=>99, 'c_ten'=>'Phú Yên', 'c_ten_khong_dau'=>'phu yen', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/21/99/map/Default.aspx'),
+	array('c_ma'=>29, 'c_ten'=>'Quảng Bình', 'c_ten_khong_dau'=>'quang binh', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/20/29/map/Default.aspx'),
+	array('c_ma'=>119, 'c_ten'=>'Quảng Nam', 'c_ten_khong_dau'=>'quang nam', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/21/119/map/Default.aspx'),
+	array('c_ma'=>34, 'c_ten'=>'Quảng Ngãi', 'c_ten_khong_dau'=>'quang ngai', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/21/34/map/Default.aspx'),
+	array('c_ma'=>120, 'c_ten'=>'Quảng Ninh', 'c_ten_khong_dau'=>'quang ninh', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/19/120/map/Default.aspx'),
+	array('c_ma'=>30, 'c_ten'=>'Quảng Trị', 'c_ten_khong_dau'=>'quang tri', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/20/30/map/Default.aspx'),
+	array('c_ma'=>57, 'c_ten'=>'Sóc Trăng', 'c_ten_khong_dau'=>'soc trang', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/23/57/map/Default.aspx'),
+	array('c_ma'=>66, 'c_ten'=>'Tây Ninh', 'c_ten_khong_dau'=>'tay ninh', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/23/66/map/Default.aspx'),
+	array('c_ma'=>47, 'c_ten'=>'Thái Bình', 'c_ten_khong_dau'=>'thai binh', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/19/47/map/Default.aspx'),
+	array('c_ma'=>85, 'c_ten'=>'Thái Nguyên', 'c_ten_khong_dau'=>'thai nguyen', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/19/85/map/Default.aspx'),
+	array('c_ma'=>106, 'c_ten'=>'Thanh Hóa', 'c_ten_khong_dau'=>'thanh hoa', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/20/106/map/Default.aspx'),
+	array('c_ma'=>31, 'c_ten'=>'Thừa Thiên Huế', 'c_ten_khong_dau'=>'thua thien hue', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/20/31/map/Default.aspx'),
+	array('c_ma'=>52, 'c_ten'=>'Tiền Giang', 'c_ten_khong_dau'=>'tien giang', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/23/52/map/Default.aspx'),
+	array('c_ma'=>84, 'c_ten'=>'Tuyên Quang', 'c_ten_khong_dau'=>'tuyen quang', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/19/84/map/Default.aspx'),
+	array('c_ma'=>95, 'c_ten'=>'Vĩnh Long', 'c_ten_khong_dau'=>'vinh long', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/23/95/map/Default.aspx'),
+	array('c_ma'=>77, 'c_ten'=>'Vĩnh Phúc', 'c_ten_khong_dau'=>'vinh phuc', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/19/77/map/Default.aspx'),
+	array('c_ma'=>61, 'c_ten'=>'Vũng Tàu', 'c_ten_khong_dau'=>'vung tau', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/23/61/map/Default.aspx'),
+	array('c_ma'=>87, 'c_ten'=>'Yên Bái', 'c_ten_khong_dau'=>'yen bai', 'url_lay_du_lieu'=>'http://www.nchmf.gov.vn/web/vi-VN/62/18/87/map/Default.aspx'),
+);
+
+$_so_ngay_mac_dinh = 3; // Số ngày cần hiển thị từ ngày bắt đầu
+$_so_ngay_mac_dinh_can_lay = 10; // Số ngày cần lấy tự động kể từ ngày bắt đầu
+$_so_tinh_thanh_lay_du_lieu_moi_buoc = 10;
+$_max_nhiet_do = 99;
+$_min_nhiet_do = -99;
+/* Begin anhpt1 24/06/2016 fix_loi_bao_mat_lo_hong_thong_qua_post_get */
+$v_so_nam_duoc_phep_loc = 2001;
+$v_gioi_han_so_ngay_hien_thi = 500;
+/* End anhpt1 24/06/2016 fix_loi_bao_mat_lo_hong_thong_qua_post_get */

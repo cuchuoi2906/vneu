@@ -1,0 +1,16 @@
+html {overflow: hidden;} /*we don't need any scrolls for our html */
+body
+{
+	margin: 0;
+	padding:0;
+	
+}
+
+
+#iframe { overflow: hidden;} /*this is to remove the scroll when not needed*/
+
+#iframe, iframe
+{
+	width: 100%;
+	height: 100%;
+}

@@ -1,0 +1,529 @@
+/*
+Copyright (c) 2003-2013, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckeditor.com/license
+*/
+
+body
+{
+	/* Font */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+
+	/* Text color */
+	color: #000;
+	text-align: justify;
+
+	/* Remove the background color to make it transparent */
+	background-color: #fff;
+
+	margin: 20px;
+}
+
+.cke_editable
+{
+	font-size: 13px;
+	line-height: 1.6;
+
+	/* Fix for missing scrollbars with RTL texts. (#10488) */
+	word-wrap: break-word;
+}
+
+blockquote
+{
+	font-style: italic;
+        /* begin 9/11/2017 TuyenNT fix_loi_font_chu_nhap_trong_chuc_nang_trich_dan_man_hinh_nhap_tin_bai */
+	font-family: Arial, Helvetica, sans-serif;
+        /* end 9/11/2017 TuyenNT fix_loi_font_chu_nhap_trong_chuc_nang_trich_dan_man_hinh_nhap_tin_bai */
+	padding: 2px 0;
+	border-style: solid;
+	border-color: #ccc;
+	border-width: 0;
+}
+
+.cke_contents_ltr blockquote
+{
+	padding-left: 20px;
+	padding-right: 8px;
+	border-left-width: 5px;
+}
+
+.cke_contents_rtl blockquote
+{
+	padding-left: 8px;
+	padding-right: 20px;
+	border-right-width: 5px;
+}
+
+a
+{
+	color: #0782C1;
+}
+
+ol,ul,dl
+{
+	/* IE7: reset rtl list margin. (#7334) */
+	*margin-right: 0px;
+	/* preserved spaces for list items with text direction other than the list. (#6249,#8049)*/
+	padding: 0 40px;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	font-weight: normal;
+	line-height: 1.2em;
+}
+
+hr
+{
+	border: 0px;
+	border-top: 1px solid #ccc;
+}
+
+img.right {
+    border: 1px solid #ccc;
+    float: right;
+    margin-left: 15px;
+    padding: 5px;
+}
+
+img.left {
+    border: 1px solid #ccc;
+    float: left;
+    margin-right: 15px;
+    padding: 5px;
+}
+
+img:hover {
+	opacity: .9;
+	filter: alpha(opacity = 90);
+}
+
+pre
+{
+	white-space: pre-wrap; /* CSS 2.1 */
+	word-wrap: break-word; /* IE7 */
+	-moz-tab-size: 4;
+	tab-size: 4;
+}
+
+.marker {
+    background-color: Yellow;
+}
+
+.box-bai-lien-quan{
+	font-family:Arial, Helvetica, sans-serif;font-size:12px;
+	width:200px;padding:10px;
+	float:right;
+}
+.box-bai-lien-quan{font-family:Arial, Helvetica, sans-serif;font-size:12px;width:200px;float:right;padding:10px;}
+
+.baiviet-bailienquan{	padding-top:5px;	text-align:left;background:#eaf8d2;padding:10px 10px 5px 10px;margin:10px 0 0 0}
+.baiviet-bailienquan p{ margin:0;padding-left:15px;	color:#000000;	background:url(/images/sprites.png) 1px -550px no-repeat;	text-decoration:none;padding-bottom:5px;}
+.baiviet-bailienquan a{	display:inline;	color:#000000}
+.baiviet-bailienquan a:hover{	text-decoration:underline}
+
+.bl{background:url(/images/bl.gif) 0 100% no-repeat #def1c8;}
+.br{background:url(/images/br.gif) 100% 100% no-repeat;}
+.tl{background:url(/images/tl.gif) 0 0 no-repeat;}
+.tr{background:url(/images/tr.gif) 100% 0 no-repeat;text-align:justify;padding:5px 10px;}
+.green-box-bg{background:#e2edc9;border-radius:5px;padding:7px 10px}
+
+.cke_script{background:url('../../images/video-icon.gif') 50% 50% no-repeat;display:block;width:100%;height: 20px !important;border:1px solid #ccc;}
+
+.table-grey{background:#c9c9c9;margin:10px 0}
+.table-grey-Bold{background:#999;margin:10px 0}
+.row-H td, div.row-H{background:#def1a9;padding:9px 5px}
+.row-W td{background:#fff;padding:9px 5px}
+.row-G td{background:#f6f6f6;padding:9px 5px}
+.row-GreenB td{background:#438212;padding:5px;color:#fff}
+.row-GreenL td{background:#a6ce39;padding:5px;color:#000}
+.xemVideo{background:url(../images/video-icon.gif) 0 2px no-repeat;padding:0 0 0 18px;white-space:nowrap}
+.tb-lichThiDau{border-bottom: #78b43d 3px double; border-left: #78b43d 3px double; border-collapse: collapse; border-top: #78b43d 3px double; border-right:#78b43d 3px double;padding:10px}
+.tb-lichThiDau p{margin:0}
+.tb-lichThiDau p a{background:url(../images/sprites.gif) 0px -302px no-repeat;padding:0 0 0px 15px;font-weight:bold}
+
+/*BAI VIET LIEN QUAN DUOI SAPO*/
+.green-box-bg-light{background:#eaf8d2;padding:7px 10px}
+.green-box-bg-light a{color: #0000FF;}
+/*Begin Thangnb toi_uu_upload_anh_gif */
+.cke_anh_gif{display:block;width:80%;height: 80% !important;border:1px solid red;margin:auto}
+/* Begin 13-03-2017 : Thangnb flip_anh_so_sanh */
+.cke_anh_so_sanh_flip{display:block;width:80%;height: 80% !important;border:1px solid blue;margin:auto}
+/* End 13-03-2017 : Thangnb flip_anh_so_sanh */
+
+/* Begin 27-03-2017 : Thangnb chon_bai_lien_quan_trong_noi_dung_bai_viet */
+.bv-lq-inner-hide {
+	display:none;
+}
+.bv-lq a {
+	text-decoration: none;
+}
+.bv-lq {
+    display: inline-block;
+    width: 100%;
+    border-radius: 3px;
+    background-color: #eaf8d2;
+    border-top: 3px solid #378b36;
+	position: relative;
+}
+.img-bv-lq {
+    width: 200px;
+    height: 150px !important;
+    margin-right: 15px;
+}
+.bv-lq .imgFloat {
+    float: left;
+    margin-right: 10px;
+    display: block;
+    position: relative;
+}
+.img-bv-lq img {
+    max-width: 420px;
+	height: 100% !important;
+}
+.bv-lq .content-bv-lq {
+    padding: 10px 10px 0 10px;
+}
+.bv-lq .title-bv a {
+    font-size: 16px;
+    color: #378b36;
+    font-weight: bold;
+}
+.bv-lq .ct-bv p {
+    font-size: 13px;
+	color: #333;
+	margin: 5px 0;
+}
+.bv-lq .see-now {
+    text-align: right;
+    padding: 10px 0px 0 10px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.bv-lq .see-now a {
+    font-size: 16px;
+    color: #378b36;
+    font-weight: bold;
+}
+/* End 27-03-2017 : Thangnb chon_bai_lien_quan_trong_noi_dung_bai_viet */
+/* Begin 29-05-2017 : Thangn gioi_han_kich_thuoc_anh_hien_thi_trong_editor */
+img {
+	max-width : 660px !important;
+}
+/* End 29-05-2017 : Thangn gioi_han_kich_thuoc_anh_hien_thi_trong_editor */
+/* Begin: Tytv - 11/08/2017 - fix_loi_anh_bang_xo_lech_noi_dung_bai_viet */
+.cke_editable img {display: block;}
+/* End: Tytv - 11/08/2017 - fix_loi_anh_bang_xo_lech_noi_dung_bai_viet */
+
+/*Begin 17-04-2018 trungcq XLCYCMHENG_29323_toi_uu_hien_thi_bai_quiz_poll_ocm*/
+.cke_quiz_container {
+    margin: auto;
+    display:block;
+}
+.cke_poll_container {
+    margin: auto;
+    display:block;
+}
+/*End 17-04-2018 trungcq XLCYCMHENG_29323_toi_uu_hien_thi_bai_quiz_poll_ocm*/
+
+/* Begin 06-08-2018 : Trungcq XLCYCMHENG_32140_bo_sung_muc_luc_bai_viet */
+.mucluc {
+    width: 650px;
+    border: 1px solid #ddd;
+}
+.muclucCtn {
+    padding: 20px;
+}
+.muclucTit {
+    text-align: center;
+}
+.muclucTit span {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.mucluc a {
+    color: #78b43d;
+    display: block;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 600;
+	text-decoration: none;
+}
+.mucluc a:hover {
+    text-decoration: underline;
+}
+.stepMl {
+    padding-left: 15px;
+}
+.stepMl a {
+    position: relative;
+}
+.stepMl a:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    left: -15px;
+    top: 11px;
+    background-color: #78b43d;
+}
+.addInfo {
+    padding-left: 30px;
+}
+.addInfo .addInfoLk {
+    position: relative;
+}
+.addInfoLk:before {
+    position: absolute;
+    content: "";
+    display: block;
+    left: -15px;
+    top: 8px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #78b43d;
+}
+.toc_heading, .toc_heading * {
+    font-size: 16px;
+    font-weight: 700;
+}
+/* End 06-08-2018 : Trungcq XLCYCMHENG_32140_bo_sung_muc_luc_bai_viet */
+/* begin 17-8-2018 BangND XLCYCMHENG_26387_bo_sung_chuc_nang_nhap_bai_magazine */
+.cke_magazine_container {
+    display: block;
+    margin: 0 auto;
+}
+/* end 17-8-2018 BangND XLCYCMHENG_26387_bo_sung_chuc_nang_nhap_bai_magazine */
+/* End 10-05-2019 TuyenNT bo_sung_bang_thong_tin_tran_dau_bong_da_vao_trang_bai_viet */
+.ct {
+    text-align: center;
+}
+.fl {
+    float: left!important;
+}
+.fr {
+    float: right!important;
+}
+.atk .head img{
+	vertical-align: middle;
+}
+.atk .head span{
+	font-size: 15px;
+	color: initial;
+}
+.atk .head{
+	display: inline-block;
+	width: 100%;
+}
+.atk span{
+	font-size: 15px;
+}
+.atk .name{
+	font-weight: bold;
+}
+.atk .c1{
+	display: inline-block;
+    background-color: #39618a;
+    width: 49%;
+    height: 5px;
+}
+.atk .c2{
+	display: inline-block;
+    background-color: #77a2c6;
+    width: 50%;
+    height: 5px;
+}
+.atk{
+	width: 80%;
+    margin: 30px auto;
+}
+.box_atk {
+	width: 540px;
+}
+.box_atk .name{
+	font-weight: normal;
+	font-size: 13px;
+}
+.flex{
+	display: flex;
+}
+.box_atk .number{
+	width: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+.box_atk .number:nth-child(1){
+	padding-right: 12px;
+}
+.box_atk .number:nth-child(3){
+	padding-left: 12px;
+}
+.box_atk .chart{
+	flex-grow: 1;
+}
+.txtLeft{
+	text-align: left;
+}
+.txtRight{
+	text-align: right;
+}
+/* End 10-05-2019 TuyenNT bo_sung_bang_thong_tin_tran_dau_bong_da_vao_trang_bai_viet */
+.img_chu_thich_0407{
+    color: #252525;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Begin: 10-09-2019 TuyenNT toi_uu_tinh_nang_va_hien_thi_bai_tuong_thuat_bong_da */
+.colorRed{
+    color: #dc0012;
+}
+.abd .list1 > div p, .list1.txtLeft p{
+    margin-bottom: 5px;
+}
+.abd .list1 > div:nth-child(1) p.txtLeft{
+    text-align: left;
+}
+.adh .list2{
+    margin-top: 0;
+}
+.adh .list2 > div{
+    border: 0;
+    padding-top: 5px;
+}
+.opa0{
+    opacity: 0;
+}
+.adh .head .fl {
+    width: 45%;
+    text-align: right;
+    margin: 0;
+}
+.adh .head .fr{
+	width: 45%;
+	text-align: left;
+	margin: 0;
+}
+.adh .list1 > div{
+	padding-top: 15px;
+}
+.adh .vs{
+	padding-top: 25px;
+}
+.adh .colL .soAo{
+	width: 24px;
+	display: inline-block;
+	text-align: center;
+	font-size: 15px;
+	float: right;
+	margin-left: 10px;
+}
+.adh .colR .soAo{
+	width: 24px;
+	display: inline-block;
+	text-align: center;
+	font-size: 15px;
+	float: left;
+	margin-right: 10px;
+}
+.duBiTit{
+	font-size: 15px;
+    font-weight: 700;
+    color: #959595;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.adh .head img{
+        vertical-align: middle;
+}
+.adh .head{
+        font-size: 15px;
+}
+.adh .head span{
+        display: inline-block;
+        margin: 0 15px;
+        font-size: 15px;
+}
+.adh .list1{
+        width: 80%;
+        margin: 0 auto;
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: 10px;
+}
+.adh .list1 > div{
+        float: left;
+        width: 45%;
+        border-top: 1px solid #ddd;
+        text-align: left;
+        padding-left: 15px;
+}
+.adh .list1 > div:nth-child(1){
+        margin-right: 15px;
+        text-align: right;
+        padding-right: 15px;
+        padding-left: 0;
+}
+.adh .db{
+        margin: 0;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #959595;
+        margin-top: 20px;
+}
+.adh .cthu{
+        border: 1px solid #e1e1e1;
+        border-top: 2px solid #378b36;
+        height: 125px;
+        overflow: hidden;
+}
+.adh .cthu .img{
+        float: left;
+}
+.adh .cthu .inner{
+        padding-left: 125px;
+}
+.adh .cthu .inner p{
+        margin: 5px 0;
+        font-size: 13px;
+        border-bottom: 1px solid #ebebeb;
+}
+.adh .cthu .tit{
+        font-size: 15px;
+}
+.adh strong{
+        font-size: 15px;
+}
+.bld {
+    font-weight: 600;
+}
+.abd .hg .time strong, .abd .hg .inner .tit{
+        color: #378b36
+}
+.abd .bg{
+        border-left: 2px solid #78b43d;
+}
+.abd .list1 > div:nth-child(1) p {
+        text-align: right;
+}
+.abd img{
+    display: inline-block !important;
+}
+/* End: 10-09-2019 TuyenNT toi_uu_tinh_nang_va_hien_thi_bai_tuong_thuat_bong_da */
+.cke_addon_pr_container,
+.cke_hoidap_container{
+    margin: 0 auto !important;
+}
+.text_error {
+    background: #ec5f5f;
+}
+.box_tong_hop_tran_dau{
+    height: 50px;
+    background: url(/ocm/images/tong_hop_tran_dau.PNG) no-repeat center;
+}

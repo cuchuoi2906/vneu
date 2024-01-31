@@ -1,0 +1,1035 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0; 
+}
+*{margin:0;font-family:Arial, Helvetica, sans-serif;font-size:12px;color:#333333}
+.clear{clear:both}
+img{border:0}
+a{text-decoration:none;color:#5aa101}a:hover{color:#3c6704}
+/*ICONSWEET*/
+@font-face {
+    font-family: 'iconSweets';
+    src: url('../fonts/icon_sweet/icon-webfont.eot');
+    src: url('../fonts/icon_sweet/icon-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/icon_sweet/icon-webfont.woff') format('woff'),
+         url('../fonts/icon_sweet/icon-webfont.ttf') format('truetype'),
+         url('../fonts/icon_sweet/icon-webfont.svg#iconSweetsRegular') format('svg');
+    font-weight: normal;    font-style: normal;}
+.clear{clear:both}
+p{margin:10px 0 10px 0}
+img{border:0}
+a{text-decoration:none}a:hover{color:#5aa101; text-decoration:underline}
+label{cursor:pointer;margin-right:5px}
+select{border:1px solid #ccc}
+.padBot{padding-bottom:5px!important}
+.padTop{padding-top:5px!important}
+.header{width:100% !important;;height:50px !important;;background:url(../images/header-bg.gif) repeat-x bottom !important;;position:relative !important;}
+.header-popup{height:30px;padding:7px 0 3px 10px;background:url(../images/header-bg.gif) repeat-x bottom;color:#fff;font-size:17px;font-weight:bold;text-transform:uppercase}
+.header-mark{color:#fff000;font-size:24px;font-weight:bold}
+.leftColumn{width:210px;background:url(../images/left-bg.gif) repeat-y;padding:10px 0 100px 10px}
+.rightColumn{padding:5px 20px 100px 20px}
+.rightColumn-co-menu{padding:0px 10px 100px 0px}
+.popupContent{padding:0px 10px 30px 10px}
+.logged{position:absolute;top:25px;right:20px;color:#fff}.logged a{text-decoration:underline;color:#fff}
+.user{font-weight:bold;color:#fff000}
+
+.menuBox-t{width:180px;height:4px;background:url(../images/menuBox-t.gif) no-repeat;overflow:hidden}
+.menuBox-c{width:170px;padding:0 5px 0 5px;background:url(../images/menuBox-c.gif) repeat-y}
+.menuBox-b{width:180px;height:4px;background:url(../images/menuBox-b.gif) no-repeat;overflow:hidden;margin-bottom:9px}
+
+/*edit 02/01/2013 */
+.menuGroupTitle{background:#dddddd;width:167px;height:20px;padding:7px 0 0 3px;color:#333333;font-family:Arial, Helvetica, sans-serif;font-size:13px;font-weight:bold}
+.menuContent{width:170px;padding:5px 0 10px 0;background:#fafafa}
+.menuContent ul{margin:0;padding:0 0 0 0px}
+.menuContent li{list-style:none;display:block}
+.menuContent li a{border-bottom:#ccc dotted 1px;display:block;padding:6px 0 3px 13px;font-family:Arial, Helvetica, sans-serif;font-size:14px;background:url(../images/icon-dot.gif) no-repeat 5px 12px;color:#333333;}
+.menuContent li a:hover{color:#81bc37;text-decoration:underline}
+.menuActive{color:#FF0000!important;font-weight:bold}
+/**/
+
+.menuTitle{background:#f0f0f0;padding:3px 5px;font-weight:bold}.menuTitle a{font-weight:bold}
+
+.contentTitle{font-size:25px}
+.smallTitle{font-size:14px;font-weight:bold;padding:5px 0 10px 0 }
+
+.line-dot{border-bottom:#ccc dotted 1px;padding:1px 0;margin-bottom:5px}
+.line-solid{border-bottom:#ccc solid 1px;padding:1px 0;margin:10px 0 5px 0}
+
+input[type=text], textarea, .txt{border:#dddddd solid 1px;padding:3px 5px;font-size:13px;color:#000;background:#f6faff}
+.txt-update{border:#dddddd solid 1px;padding:2px 5px;font-family:Verdana, Geneva, sans-serif;font-size:12px;color:#666;text-align:center;width:50px}
+.dropdown{border:#dddddd solid 1px;padding:1px;font-size:11px;color:#666}
+.divButton{padding:7px 0 2px 0}
+input[type=button], input[type=submit], .button, button{font-size:11px;font-weight:bold}
+
+table.listing{background:#c5c5c5}
+table.listing td {padding:4px;font-family:Verdana, Geneva, sans-serif;font-size:11px}
+.rowTitle{background:#eeeeee;text-align:center;padding:4px;font-weight:bold}
+table.listing .rowContent-w td{background:#f9f7f7;padding:4px;font-family:Verdana, Geneva, sans-serif;font-size:11px}
+table.listing .rowContent-w  td i{font-family:Verdana, Geneva, sans-serif;font-size:11px}
+table.listing .rowContent-g td {background:#f9f7f7;padding:4px;font-family:Verdana, Geneva, sans-serif;font-size:11px}
+table.listing .rowContent-g  td i{font-family:Verdana, Geneva, sans-serif;font-size:11px}
+table.listing .rowContent-w  td.title{color:#989696}
+table.listing .rowContent-g  td.title{color:#989696}
+table.listing .rowCategory td {background-color:#E2E2E2;}
+
+table.listing .rowContent-sub-comment td {background:#FFFFFF;padding:4px;font-family:Verdana, Geneva, sans-serif;font-size:11px}
+.header-sub-comment-content{background:#DDDDDD;}
+.header-sub-comment-nothing{background:#FFFFFF;}
+table.listing .header-sub-comment td {background:#FFFFFF;padding:4px;font-family:Verdana, Geneva, sans-serif;font-size:11px}
+.greenLink{color:#64a711;font-weight:bold}.greenLink:hover{text-decoration:underline}
+.redBoldText{color:#ff0000;font-weight:bold}
+.redText{color:#ff0000!important;font-size:11px}
+.blueBoldText{color:#06C;font-weight:bold}
+.blueText{color:#06C;font-size:11px}
+.blueText-big{color:#06C;font-size:14px}
+
+.div-note{border:#c7e89c solid 1px;padding:10px;margin-bottom:10px}
+
+.subTitle{padding-top:20px;font-weight:bold;font-size:18px;color:#5aa101;padding:0 0 10px 0}
+
+.tbLabel{text-align:right;padding:5px;font-family:Verdana, Geneva, sans-serif;font-size:11px}
+
+
+.login-container{padding:150px 0 0 0;width:465px;margin:0 auto}
+.login-top{width:425px;height:73px;padding:10px 20px;background:url(../images/login-top.jpg) no-repeat;color:#fff}
+.login-logo{float:left;width:100px;height:65px;padding:7px 0 0 0}
+.login-text{float:left;width:290px;padding:10px 0 0 30px;color:#fff;}
+.login-text span{color:#fff;font-weight:bold;line-height:25px}
+.login-content{width:445px;padding:5px 10px;background:url(../images/login-content.jpg) repeat-y;color:#fff}
+.login-bottom{width:425px;height:14px;padding:10px 20px;background:url(../images/login-bottom.jpg) no-repeat;color:#fff}
+
+.login-note{padding:13px 20px;background:#000;color:#fff;font-size:12px;text-align:center}
+.loginLabel{text-align:right;padding-right:10px;color:#888888;font-size:12px}
+.greyBox{background:#e2e2e2;padding:5px 5px 2px 5px;margin:5px 0;border:#c7c7c7 solid 1px}
+.greyBox-light{background:#efefef;padding:5px 5px 2px 5px;margin:10px 0;border:#c7c7c7 solid 1px}
+
+.linkRedArrow{background:url(../images/redArrow.gif) no-repeat right 5px;padding:0 20px 0 0;font-weight:bold;font-size:11px}
+.linkRedArrow-up{background:url(../images/redArrow-up.gif) no-repeat right 0px;padding:0 20px 0 0;font-weight:bold;font-size:11px}
+.linkChonBaiLienQuan{background:url(../images/add-bai-lien-quan.gif) no-repeat;padding:9px 20px 2px 37px;font-weight:bold;font-size:11px}
+
+.popup-chuyenmuc{background:#ccc;padding:4px;font-weight:bold}
+.popup-menuCap1{background:#eeeeee;padding:4px;font-weight:bold}
+.popup-menuCap2{background:#fff;padding:4px 4px 4px 20px;font-family:Verdana, Geneva, sans-serif;font-size:11px}
+
+.baiviet-bailienquan{	padding-top:5px;	text-align:left}
+.baiviet-bailienquan p{ margin:0;padding-left:15px;	color:#000000;	background:url(../images/icon-01.gif) 0px 3px no-repeat;	text-decoration:none;font-family:Arial, Helvetica, sans-serif;font-size:12px;padding-bottom:5px;}
+.baiviet-bailienquan a{	display:inline;	color:#000000;	text-decoration:none;font-family:Arial, Helvetica, sans-serif;font-size:12px;}
+.baiviet-bailienquan a:hover{	text-decoration:underline}
+
+.phantrang{color:#333;text-align:right;font-weight:normal;font-size:11px;padding:5px 10px 5px 0}.phantrang a{text-decoration:none;color:#333}.phantrang a:hover{text-decoration:underline;color:#409c1e}
+
+.iframe-view{width:603px;padding:10px;margin:10px 0 0 0;border:#ddd solid 1px;margin-bottom:10px}
+.iframe-form{width:0px;height:0px;visibility:hidden;}
+.iframe_debug {	width: 0px;	height: 0px;	visibility:hidden;}
+.iframe_debug1 {	width: 0px;	height: 0px;	visibility:hidden;}
+.popup-overlay {z-index: 99;border: none;position: fixed;_position: absolute;top: 0;left: 0;right: 0;bottom: 0;top: 0;background-color: rgba(53,53,53,0.3);}
+*  html .popup-overlay {position: absolute;width: expression(eval(document.documentElement.clientWidth));height: expression(eval(document.documentElement.clientHeight));top: expression(eval(document.documentElement.scrollTop));left: expression(eval(document.documentElement.scrollLeft));}
+.box-popup{position:absolute;z-index:100;_background:transparent;background-color:#e1e1e1;margin:0;border:none;zoom:1;-moz-box-shadow:0px 0px 5px ##333333;-webkit-box-shadow:0px 0px 5px ##333333;box-shadow:0px 0px 5px ##333333;padding: 5px;}
+.boxy-modal {background:url(images/blank.gif) no-repeat; background-color:rgba(0,0,0,.3); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f7f7f7f, endColorstr=#7f7f7f7f);}
+
+.error_box{border:1px solid #bbb;margin-bottom:10px;padding:5px;background-color:#ffffcc}
+.image-button{cursor:pointer}
+.btnNext{position:absolute;top:0;right:15px;}
+.btnNext a{line-height:300px;vertical-align:bottom;display:block;margin-top:10px;}
+.btnPre{position:absolute;top:0;left:15px;}
+*html .btnPre{position:absolute;top:0;left:5px;}
+.btnPre a{line-height:300px;vertical-align:bottom;display:block;margin-top:10px;}
+.big_image_block{width:750px;position:relative;overflow:hidden}
+.thumb_block{width:750px;height:110px;padding-top:10px;margin-bottom:10px;overflow-x:scroll;overflow-y:hidden}
+
+
+
+.iconsweet{	font-family:iconSweets;	font-weight:normal;color:#fff;padding-right:5px;text-shadow: 0px 1px 0px  #000;	-webkit-text-shadow: 0px 1px 0px  #000;}
+
+.container{background:#e8e8e8}
+.container-popup{background:#e8e8e8;padding:5px 15px 15px 15px}
+
+.headerText{position:absolute;top:10px;left:100px;font-family:Corbel, Arial, Helvetica, sans-serif;font-size:30px;font-weight:bold;text-shadow: 0px 1px 0px  #000;	-webkit-text-shadow: 0px 1px 0px  #000;color:#cad2d4}
+.user{font-weight:bold;color:#cad2d4;text-shadow: 0px 1px 0px  #000;	-webkit-text-shadow: 0px 1px 0px  #000;}
+
+.content{padding:0px 15px}
+
+.title-main{font-family:Corbel, Arial, Helvetica, sans-serif;font-size:22px;color:#70a034;text-transform:uppercase;font-weight:bold;padding:5px 0 0 0;text-shadow:0px 1px 0px #fff;-webkit-text-shadow:0px 1px 0px #fff}
+
+/*=====LAYOUT=====*/
+.one_wrap{	width:100%;	display:inline-block;}
+.fl_left{	float:left;}
+.widget{	background:#fff;	box-shadow:0px 1px 2px 1px #acaeaf;	-webkit-box-shadow:0px 1px 2px 0px #acaeaf;	margin-top:5px;	clear:both;	border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;}
+.widget .widget_title{	background:url(../images/widget_title_bg.png) repeat-x center top #eeeeee;	height:38px;	border-bottom:solid 1px #e0e0e0;	border-radius:3px 3px 0px 0px;position:relative}
+.widget .widget_title span{	font-size:24px;	float:left;	padding:3px 0px;	text-shadow: 0px 1px 0px  #fff;	-webkit-text-shadow: 0px 1px 0px  #fff;	color:#6c6c6c;	width:35px;	text-align:center;	}
+.widget .widget_title h5{	color:#333;	font-size:14px;	float:left;	padding:13px 0px 10px 10px;	text-shadow: 0px 1px 0px  #fff;}
+.widget_body{padding:2px}
+
+.boxSearchItem{border:#cccccc solid 1px;padding:1px;float:left;margin:0 5px 0 5px}
+.boxSearchTitle{background:#e7e7e7;color:#4a4a4a;font-size:13px;font-weight:bold;padding:5px 10px;text-shadow: 0px 1px 0px  #fff;-webkit-text-shadow: 0px 1px 0px  #fff}
+.boxSearchCont{height:80px;overflow:auto;padding:5px 10px;line-height:22px}.boxSearchCont a{color:#333}.boxSearchCont a:hover{color:#5aa101}
+
+.arrowRight{float:left;padding:40px 0 0 0}
+.searchDiv{padding:5px 10px}
+
+.form_input input, .form_input textarea{
+	width:98%;
+	border:solid 1px #ccc;
+	padding:8px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background:#f8f8f8;
+	border-radius:3px;
+	color:#666;
+	box-shadow: inset 0 1px 0 0px #fff;
+	-webkit-box-shadow:inset 0 1px 0 0px #fff;
+}
+
+/*Button - basic*/
+a.button_big{
+	font-family:Corbel, Arial, Helvetica, sans-serif;font-size:13px;font-weight:bold;
+	color:#fff;
+	display:inline-block;
+	border:solid 1px #cfcfcf;
+	font-size:13px;
+	margin-right:10px;
+    background-color: #F0F0F0;
+    background-image: -moz-linear-gradient(center top , #FFFFFF 0pt, #E0E0E0 100%);
+	background-image: -webkit-linear-gradient(top,white 0,#E0E0E0 100%);
+	background-image: linear-gradient(to bottom,white 0,#E0E0E0 100%);
+    border-color: #CCCCCC #CCCCCC #AAAAAA;
+    box-shadow: 0 0 1px #FFFFFF inset;
+    text-shadow: 0 1px 0 #FFFFFF;
+	border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+	padding:3px 10px;
+	text-decoration:none;
+}
+a.button_big:hover{
+	box-shadow:0 1px 0 #FFFFFF inset, 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+a.button_big:active{
+    background-image: -moz-linear-gradient(center bottom , #FFFFFF 0pt, #E0E0E0 100%);
+	background-image: -webkit-linear-gradient(bottom,white 0,#E0E0E0 100%);
+	background-image: linear-gradient(to bottom,white 0,#E0E0E0 100%);
+}
+a.button_big:hover span.iconsweet{
+	color:#478CFE;
+}
+a.btn_grey{
+	background-color: #787b83;
+    background-image: -moz-linear-gradient(center top , #787b83 0pt, #44474e 100%);
+	background-image: -webkit-linear-gradient(top,#787b83 0,#44474e 100%);
+	background-image: linear-gradient(to bottom,#787b83 0,#44474e 100%);
+    border-color: #7a828d #7a828d #3d4046;
+    box-shadow: 0 1px 0 rgba(152, 155, 160, 0.45) inset;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+	color:#f0f0f0;
+}
+a.btn_grey:hover{
+	box-shadow:0 1px 0 #a1a5af inset, 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+a.btn_grey:hover span.iconsweet{
+	color:#000;
+}
+a.btn_grey:active{
+	background-image: -moz-linear-gradient(center bottom , #787b83 0pt, #44474e 100%);
+	background-image: -webkit-linear-gradient(bottom,#787b83 0,#44474e 100%);
+	background-image: linear-gradient(to bottom,#787b83 0,#44474e 100%);
+}
+a.btn_grey span.iconsweet{
+	color:#f0f0f0;
+}
+a.button_big span{
+	font-size:18px;
+	color:#606060;
+	float:left;
+	margin-top:-3px;
+	padding-right:10px;
+}
+
+ul.pagination li{
+	list-style:none!important;
+	margin:0px 2px!important;
+	display:inline-block;
+}
+ul.pagination li a{
+	text-decoration:none;
+	border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+	font-size: 11px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 16px;
+	border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+	background: url(../images/whiteBtn.png) repeat-x scroll 0 0 transparent;
+    border: 1px solid #cccccc;
+    color: #555555;
+	text-shadow: 0 1px 0 #FFFFFF;
+	box-shadow: 0 1px 0 0 #FFFFFF;
+	-webkit-box-shadow:0 1px 0 0 #FFFFFF;
+	padding:3px 8px;
+}
+
+ul.pagination li a.active{
+    background: url(../images/greishBtn.png) repeat-x scroll 0 0 transparent;
+    border: 1px solid #4F5A68;
+    color: #FFFFFF;
+	text-shadow: 0 1px 0 #474747;
+}
+
+ul.pagination li a:hover{
+background-position:bottom;
+}
+ul.pagination li a:active{
+background-position:center;
+}
+
+.table-br{background:#e5e5e5}
+.table-br td{padding:7px 7px}
+.row-w{background:#fff}
+.row-b{background:#feffec}
+.row-header{background:#97bdcb url(../images/tb-header.png) repeat-x;color:#111111;text-shadow: 0px 1px 0px  #ccf0ff;	-webkit-text-shadow: 0px 1px 0px  #ccf0ff;font-weight:bold}
+.dropbox{border:#ddd solid 1px;padding:3px 4px}
+
+.filter{padding:5px 0 10px 0;font-size:17px;color:#000}.filter b{font-size:16px;color:#f30303}
+
+.login-container{padding:150px 0 0 0;width:465px;margin:0 auto}
+.login-top{width:425px;height:73px;padding:10px 20px;background:url(../images/login-top.jpg) no-repeat;color:#fff}
+.login-logo{float:left;width:100px;height:65px;padding:7px 0 0 0}
+.login-text{float:left;width:290px;padding:10px 0 0 30px;color:#fff;}
+.login-text span{color:#fff;font-weight:bold;line-height:25px}
+.login-content{width:445px;padding:5px 10px;background:url(../images/login-content.jpg) repeat-y;color:#fff}
+.login-bottom{width:425px;height:14px;padding:10px 20px;background:url(../images/login-bottom.jpg) no-repeat;color:#fff}
+
+.login-note{padding:13px 20px;background:#000;color:#fff;font-size:12px;text-align:center}
+.loginLabel{text-align:right;padding-right:10px;color:#888888;font-size:12px}
+
+.textbox{border:#ddd solid 1px;padding:3px 4px}
+.txt-TS{width:50px}
+
+.cap1,.cap1 a{color:#d90202;font-weight:bold}.cap1-pad0{color:#d90202}
+.cap2{padding-left:15px;color:#5aa101;font-weight:bold}.cap2-pad0{color:#5aa101}
+.cap3{padding-left:30px;color:#000}.cap3 a{color:#000;font-weight:bold}.cap3-pad0{color:#000}
+
+.lichsu-capnhat{height:300px;overflow:auto}
+.lichsu-item{border-bottom:#ddd solid 1px;padding:10px}
+.lan-capnhat{background:#deebf1;padding:5px 10px;font-weight:bold;margin:0 0 10px 0;text-transform:uppercase}
+
+.lineHeight18{line-height:18px}
+.lineHeight23{line-height:23px}
+.nganhhang{border:#cccccc solid 1px;margin:5px 0 0 0;width:358px;padding:5px;height:150px;overflow:auto}.nganhhang a{color:#333}.nganhhang a:hover{color:#5aa101}
+ul.searchList{margin:0;padding:0px 0px 5px 40px}
+ul.searchList li{list-style:none;display:block;margin:2px 0 0px 0;font-size:11px}
+ul.searchList li a{padding:0 0 0 0px;color:#333;font-size:11px}
+ul.searchList li a:hover{color:#ca0002}
+
+.nav-nganhhang{background:url(../images/section_bg.png) repeat-y top right;width:190px;margin:12px 0 0 0;padding:10px 17px 30px 7px;border-left:#ccc solid 1px}
+.navTieude{font-size:16px;text-shadow:0 1px 0 #fff;-webkit-text-shadow:0 1px 0 #fff;font-weight:bold;color:#333;padding:0 0 5px 0}
+.navLine{height:0px;border-bottom:#fff solid 1px;border-top:#dcdfe0 solid 1px;overflow:hidden}
+.navList ul{margin:0;padding:10px 0 10px 0}
+.navList ul li{display:block;padding:0 0 0 0px;margin:0 0 2px 0}
+.navList ul li a{display:block;font-weight:bold;color:#333;text-shadow:0 1px 0 #fff;-webkit-text-shadow:0 1px 0 #fff;background:#ddd;padding:7px}
+.navList ul li a:hover{background:#d1d1d1}
+.navList ul li ul{margin:0;padding:0px 0 10px 0;background:none}.navList ul li ul li{padding:0 0 0 5px}
+.navList ul li ul li a{background:url(../images/iconGreen.gif) no-repeat 0 15px;padding:10px 0 0 12px}.navList ul li ul li a:hover{background:url(../images/iconGreen.gif) no-repeat 0 15px;color:#5aa101}
+.navList ul li ul li ul{margin:0;padding:0;background:none}.navList ul li ul li ul li{padding:0 0 0 15px;list-style:none}
+.navList ul li ul li ul li a{background:none;padding:5px 0 0 12px;font-weight:normal}.navList ul li ul li ul li a:hover{background:none;font-weight:bold}
+
+.divListButton30{padding:10px 0 5px 0}
+.divListButton10{padding:10px 0 5px 0}
+
+.line{border-bottom:#ddd dotted 1px;margin:10px 0 10px 0}
+.navTieude-ngang{font-size:16px;text-shadow:0 1px 0 #fff;-webkit-text-shadow:0 1px 0 #fff;font-weight:bold;color:#333;padding:10px 0 10px 10px}
+
+.div-btn-search{/*position:absolute;left:200px;top:7px*/ float:right;padding:7px 0 0 0}
+
+.link-bor{color:#333;text-decoration:underline}.link-bor:hover{color:#090}
+
+.button_small{
+	display:inline-block;vertical-align:top;
+	border:solid 1px #cfcfcf;
+	font-size:30px;line-height:10px;
+	margin:3px 3px;
+    background-color: #F0F0F0;
+    background-image: -moz-linear-gradient(center top , #FFFFFF 0pt, #E0E0E0 100%);
+	background-image: -webkit-linear-gradient(top,white 0,#E0E0E0 100%);
+	background-image: linear-gradient(to bottom,white 0,#E0E0E0 100%);
+	border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+	padding:1px 3px 10px 2px;
+	text-decoration:none;
+	font-family:iconSweets;	font-weight:normal;color:#222;font-size:23px;
+}
+
+.col-6{float:left;width:16.4%;border:solid 1px #cfcfcf;text-align:center;padding:5px 0;margin:7px 0 7px 0}
+
+.button_sub{
+	font-family:Corbel, Arial, Helvetica, sans-serif;font-size:13px;font-weight:bold;
+	color:#fff;
+	display:inline-block;
+	border:solid 1px #cfcfcf;
+	font-size:12px;
+	margin-right:5px;
+    background-color: #787b83;
+    background-image: -moz-linear-gradient(center top , #999999 0pt, #777777 100%);
+	background-image: -webkit-linear-gradient(top,#999999 0,#777777 100%);
+	background-image: linear-gradient(to bottom,#999999 0,#777777 100%);
+    border-color: #999999 #7a828d #777777;
+    box-shadow: 0 1px 0 rgba(152, 155, 160, 0.45) inset;
+/*    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.95);*/
+	border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px;
+	padding:1px 7px 2px 7px;
+	text-decoration:none;
+}
+.button_sub:hover{
+	box-shadow:0 1px 0 #bbb inset, 0 1px 3px rgba(0, 0, 0, 0.08);color:#fff
+}
+
+.button_sub span.iconsweet{
+	color:#fff;
+}
+
+.row-g{background:#f9f9f9}
+.history{font-size:11px;color:#5aa101;}.history:hover{color:#000}
+.baiviet-tit{font-size:13px;color:#333}.baiviet-tit:hover{text-decoration:underline}
+.category-list{max-height:150px;overflow:auto;}
+.running{color:blue}
+.expired{color:red}
+.pending{color:green}
+
+.no-wrap{white-space:nowrap}
+a.content-comment{color:#686868}
+a.content-comment:hover{text-decoration:none;color:#989898}
+
+div#link_details{background:#f7d8e3;float:left;width:551px;margin:0;}
+b.rtop_details b,b.rbottom_details b{display:block;height:1px;overflow:hidden;background:#f7d8e3;}
+.text_link_ads_details{overflow-y:auto;overflow-x:hidden;width:96%;height:100%;padding-left:10px;}
+.text_link_ads_details a{font-family:Arial, Helvetica, sans-serif;color:blue;text-align:left;font-size:12px;font-weight:700;text-decoration:underline;background:url(../images/icon-1.gif) 5px 7px no-repeat;display:block;padding-left:20px;line-height:19px;margin-top:7px;margin-bottom:7px;}
+.text_link_ads_details a:hover{text-decoration:underline;color:blue;background:url(../images/icon-1-over.gif) 5px 7px no-repeat;}
+b.rtop,b.rbottom,b.rtop_details,b.rbottom_details{display:block;background:#FFF;}
+b.r1,b.r1_details{margin:0 5px;}
+b.r2,b.r2_details{margin:0 3px;}
+b.r3,b.r3_details{margin:0 2px;}
+b.rtop b.r4,b.rbottom b.r4,b.rtop_details b.r4_details,b.rbottom_details b.r4_details{height:2px;margin:0 1px;}
+#tt {position:absolute; display:block; z-index:10000001}
+#tttop {display:block; height:5px; margin-left:5px; overflow:hidden;z-index:10000001}
+#ttcont {display:block; padding:2px 12px 3px 7px; margin-left:5px; background:#E85757; color:#fff;z-index:10000001}
+#ttbot {display:block; height:5px; margin-left:5px; overflow:hidden;z-index:10000001}
+
+.sub-comment{background:#FCF6EA!important;}
+.none{display:none;}
+a.thaotac-listing{font-size:12px;}
+
+span.browse_button{position:relative;width:65px; height:30px; text-align:center; line-height:27px; margin-right:5px; font-size:12px; font-weight:bold; border:1px solid #ccc; cursor:pointer; padding:0px; background:#eee; display:block; float:left; overflow:hidden; }
+span.browse_button input{position:absolute; cursor:pointer; right:0px; top:0px; height:40px; width:195px; margin:0px; opacity:0; filter:alpha(opacity=0);}
+.footer{width:1004px;}
+.footer-copyright {color: #333333;float: left;font-size: 11px;font-weight: normal; padding-bottom: 6px; padding-top: 6px; text-align: right;  width: 700px;}
+.footer-logo {float: left; width: 200px;}
+.footer-website {text-align: right;}
+.footer-website a {color: #3C6D15;font-weight: bold;text-decoration: none; text-transform: uppercase;}
+.footer-website a:hover { text-decoration: underline;}
+.taiTroTitle{ background: url("../images/taiTroTitle.gif") repeat scroll 0 0 transparent; color: #000000; font-size: 14px; font-weight: bold; height: 21px; margin: 0 1px; overflow: hidden; padding: 8px; text-align: center; } .yellowBox-t{width:570px;height:5px;overflow:hidden;background:url(../images/yellowBox-t.gif) no-repeat}
+.yellowBox-c{width:570px;overflow:hidden;background:url(../images/yellowBox-c.gif) repeat-y}
+.yellowBox-b{width:570px;height:5px;overflow:hidden;background:url(../images/yellowBox-b.gif) no-repeat}
+.thongbao-text{width:380px;float:left;color:#ff0000;padding:8px 20px}
+.thongbao-img{width:140px;float:left;}
+.box-chan-bai-viet { background: none repeat scroll 0 0 #FFDC96; border-radius: 5px 5px 5px 5px; color: #000000; font-weight: bold; line-height: 18px; padding: 10px; text-align: center; }
+.score { font-size: 20px; font-weight: bold; text-align: center; width: 40px; height: 40px; } 
+
+/*TUONG THUAT*/
+.tb-euroInfo{background:#60a427;padding:4px;width:548px;}
+table.table-grey {width:556px;}
+table.table-grey p{margin:0;}
+.euro-team{font-size:16px;color:#666;font-weight:bold;padding:7px 0}
+.euro-tiso{font-family:"Times New Roman", Times, serif;color:#f20000;font-size:55px;font-weight:bold;padding:0 0 10px 0;letter-spacing:10px}
+.euroTb-sub{background:#adadad;border:#adadad solid 1px}
+.euroTb-cell-G td{background:#dddddd;padding:2px 10px;font-weight:bold;color:#333}
+.euroTb-cell-W td{background:#fff;padding:2px 10px;font-weight:bold;color:#333}
+.br-L-3px{border-left:#adadad solid 3px}
+.euroLink{background:#326609;display:inline-block;margin-right:1px;padding:5px 10px;color:#fff;font-weight:bold;text-decoration:none;text-align:center}
+.euroLink:hover{background:#224804;text-decoration:none}
+.euroGroupLink{margin:4px 0 0 0;border-bottom:#a4c77b solid 1px}
+.table-grey{background:#c9c9c9;margin:10px 0}
+.table-grey-Bold{background:#999;margin:10px 0}
+.row-H td, div.row-H{background:#def1a9;padding:9px 5px}
+.row-W td{background:#fff;padding:9px 5px}
+.row-G td{background:#f6f6f6;padding:9px 5px}
+.row-GreenB td{background:#438212;padding:5px;color:#fff}
+.row-GreenL td{background:#a6ce39;padding:5px;color:#000}
+.xemVideo{background:url(../images/video-icon.gif) 0 2px no-repeat;padding:0 0 0 18px;white-space:nowrap}
+.thethao-tit{background:#5ca038;text-align:center;font-size:14px;font-weight:bold;color:#fff;padding:3px 0 7px 0}
+
+/*box cuoi bai viet*/
+.boxTaiTro{background:#f1f1f1;border:#d3d3d3 solid 1px;padding:0px;margin:15px 0 10px 0}
+.boxTaiTro a{color:#5082bf}
+.boxTaiTro p{margin:5px 0}
+.boxTaiTro td:first-child{border-right:1px solid #d3d3d3}
+.title-preview {font-size: 14px;color: #5AA101;font-weight: bold;}
+
+/* Apply these styles only when #preview-pane has
+   been placed within the Jcrop widget */
+.jcrop-holder #jcrop-preview-pane {
+    display: block;
+    position: absolute;
+    z-index: 2000;
+    left: 610px;
+    padding: 6px;
+    border: 1px #ccc solid;
+    background-color: white;
+}
+#jcrop-preview-pane .jcrop-preview-container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+/* jcrop: end*/
+
+.iframe-debug{display:none;}
+
+.fl-Left {
+	float: left;
+}
+.fl-Right {
+	float: right;
+}
+/*add 08-12-2014*/
+.mxh-ver-left{width:10px;height:17px;display:inline-block;background:url(../images/mxh-ver-left.gif) no-repeat;font-size:12px;padding:3px 0 0 0;vertical-align:bottom}
+.mxh-ver-right{height:17px;display:inline-block;background:url(../images/mxh-ver-right.gif) no-repeat right;font-size:12px;padding:3px 5px 0 0;vertical-align:bottom}
+.mxh-hoz-left{width:12px;height:29px;display:inline-block;background:url(../images/mxh-hoz-left.gif) no-repeat;font-size:12px;padding:9px 0 0 0;vertical-align:bottom}
+.mxh-hoz-right{height:28px;display:inline-block;background:url(../images/mxh-hoz-right.gif) no-repeat right;font-size:12px;padding:10px 10px 0 0;vertical-align:bottom;min-width:32px;text-align:center}
+
+/* Thangnb add box thong diep mxh 26/01/2015 */
+.mang-xa-hoi-chuyen-muc{
+	width:300px;
+	padding:25px 0 0 7px;	
+}
+.mang-xa-hoi-chuyen-muc * {
+	font-size:18px;
+	font-weight:bold;	
+}
+
+.td_anh_so_sanh {
+	border-bottom: 1px #CCC dotted;	
+}
+/* Begin anhpt1 27/06/2016 export_import_title_des_key_bai_viet */
+.title-export-data {
+     padding: 6px 10px;
+    background-color: #e5e5e5;
+}
+.content-export-data {
+     border: 1px solid #ddd;
+    padding: 20px;
+}
+.date-export-data {
+ margin-bottom: 20px;
+}
+.date-export-data input {
+ padding: 4px 10px;
+}
+.button-export-data button {
+ padding: 4px 12px;
+    margin: 0 10px;
+}/* End anhpt1 27/06/2016 export_import_title_des_key_bai_viet */
+
+/*Begin 29-07-2016 trungcq bo_sung_xem_lich_su_nhan_xet_tin_bai*/
+.box-popup {
+    position: relative;z-index: 999999;background:#fff;margin: 0;border: 1px solid #EBEBEB;/* End: DanhPC 29/07/2015: error double position */
+    box-shadow: 3px 2px 3px #EFEFEF;
+}
+.popup-overlay {position:fixed;top:0;left:0;right:0;width:100%;height:100%;z-index:999999 !important;}
+.popupClose{
+    background: transparent url("../images/iconDelete.gif") no-repeat scroll right bottom;
+    cursor: pointer;
+    height: 20px;
+    position: absolute;
+    right: 0px;
+    top: -8px;
+    width: 20px;
+}
+/*End 29-07-2016 trungcq bo_sung_xem_lich_su_nhan_xet_tin_bai*/
+
+/* Tytv - 11/10/2016 - quan_ly_quiz (quiz-1) */ 
+.view_desc_quiz{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    cursor: pointer;
+}
+#list_desc_quiz{
+   display: none;
+    width: 360px;/* edit: Tytv - 20/06/2017 - bo_xung_quiz_5 */
+    height: 300px;
+    background: rgba(122, 179, 50,0.8);
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+}
+.view_desc_quiz:hover #list_desc_quiz {
+    display: block !important;
+}
+/* tối ưu giao diện quiz */
+#list_desc_quiz {
+    background: #d3d3d3;
+    height: initial;
+    line-height: 1.5;
+    right: 0;
+}
+.quiz input[type=text],.quiz textarea,.quiz .txt {
+    padding: 6px;
+}
+.quiz .borBot {
+    padding: 10px 0;
+}
+.quiz select {
+    padding: 4px 6px !important;
+}
+.quiz table.borBot tr td .view_desc_quiz {
+    font-size: 12px;
+}
+/*.tbl_q tr td table tr td {
+    padding: 4px;
+}*/
+.width-145 {
+    width: 145px;
+    font-weight: 700;
+} 
+.width-100 {
+    width: 100px;
+} 
+.width-150 {
+    width: 150px;
+} 
+.quiz table tr td.font-bold {
+    font-size: 16px;
+    background-color: #e4e4e4;
+}
+.quiz table tr td, .quiz table tr td * {
+    font-size: 14px;
+}
+.display-answer select {
+    margin-right: 10px;
+}
+.bold {
+    font-weight: 700;
+}
+.width-40 {
+    width: 40px;
+}
+.pad10 {
+    padding: 10px;
+}
+.text-center {
+    text-align: center;
+}
+table.tbl_q {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+#zone_quiz_result {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+#zone_quiz_result h5 {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+.tbl_q .button_big {
+    margin: 0 10px;
+}
+.table-trfirst td {
+    padding: 8px;
+}
+#zone_quiz_result table {
+    width: 100%;
+}
+.add-answer, .close-answer {
+    margin: 0 10px;
+}
+.add-answer img, .close-answer img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-bottom: -5px;
+}
+table.display-answer {
+    padding-top: 10px;
+}
+.quiz .add-answer, .quiz .close-answer {
+    font-size: 14px;
+}
+.quiz .add-answer {
+    padding: 6px 12px;
+}
+.table-trfirst {
+    text-align: center;
+    background: #ccc; 
+    padding: 5px;
+}
+.padLeft-6 {
+    padding-left: 6px;
+}
+/* tối đư giao diện quiz */
+/* Tytv - 11/10/2016 - quan_ly_quiz (quiz-1) */
+.suggession_evnet_sub .token-input-list-facebook{
+    width: 94% !important;
+}
+/* begin 18/10/2016 TuyenNT bo_sung_nut_next_pre_cho_box_menu_duoi_bai_tong_hop_dau_trang_chu_mobile */
+.info-seo-left {
+    float:left; margin-right:10px;
+}
+.info-seo-right {
+    float:left; margin-top:-2px;
+}
+.info-seo-right img{
+   vertical-align: middle;
+}
+/* end 18/10/2016 TuyenNT bo_sung_nut_next_pre_cho_box_menu_duoi_bai_tong_hop_dau_trang_chu_mobile */
+/* Begin 27-03-2017 : Thangnb chon_bai_lien_quan_trong_noi_dung_bai_viet */
+#cke_txt_bai_lien_quan_noi_dung_bai_viet_24h .cke_reset_all {
+	display: none;	
+}
+#cke_txt_bai_lien_quan_noi_dung_bai_viet_24h {
+	float: left;	
+}
+.button_sub {
+    font-family: Corbel, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    border: solid 1px #cfcfcf;
+    font-size: 12px;
+    margin-right: 5px;
+    background-color: #787b83;
+    background-image: -moz-linear-gradient(center top , #999999 0pt, #777777 100%);
+    background-image: -webkit-linear-gradient(top,#999999 0,#777777 100%);
+    background-image: linear-gradient(to bottom,#999999 0,#777777 100%);
+    border-color: #999999 #7a828d #777777;
+    box-shadow: 0 1px 0 rgba(152, 155, 160, 0.45) inset;
+    /* text-shadow: 0 1px 0 rgba(0, 0, 0, 0.95); */
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    padding: 1px 7px 2px 7px;
+    text-decoration: none;
+}
+/* End 27-03-2017 : Thangnb chon_bai_lien_quan_trong_noi_dung_bai_viet */
+/* Begin 27-03-2017 : Thangnb chon_bai_lien_quan_trong_noi_dung_bai_viet */
+.bv-lq-inner-hide {
+	display:none;	
+}
+.bv-lq a {
+	text-decoration: none;	
+}
+.bv-lq {
+    display: inline-block;
+    width: 100%;
+    border-radius: 3px;
+    background-color: #eaf8d2;
+    border-top: 3px solid #378b36;
+}
+.img-bv-lq {
+    width: 200px;
+    height: 150px;
+    margin-right: 15px;
+}
+.bv-lq .imgFloat {
+    float: left;
+    display: block;
+    position: relative;
+}
+.img-bv-lq img {
+    max-width: 420px;
+	width: 100%;
+}
+.bv-lq .content-bv-lq {
+    padding: 10px 10px 0 10px;
+}
+.bv-lq .title-bv a {
+    font-size: 16px;
+    color: #378b36;
+    font-weight: bold;
+}
+.bv-lq .ct-bv p {
+    font-size: 13px;
+}
+.bv-lq .see-now {
+    text-align: right;
+    padding: 10px 0px 0 10px;
+}
+.bv-lq .see-now a {
+    font-size: 16px;
+    color: #378b36;
+    font-weight: bold;
+}
+.ct-bv p {
+    margin: 5px 0;
+}
+/* End 27-03-2017 : Thangnb chon_bai_lien_quan_trong_noi_dung_bai_viet */
+/* Begin TungVN 19-09-2017 - toi_uu_tinh_huong_cap_nhat_bai_2_lan */
+.loading-overlay {
+    display: table;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+.loading-overlay .inner {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.loading-overlay .inner img {
+    display: block;
+    width: 252px;
+    height: auto;
+    margin: 0 auto 25px;
+}
+.loading-overlay p {
+    color: #fff;
+    font-size: 18px;
+}
+/* End TungVN 19-09-2017 - toi_uu_tinh_huong_cap_nhat_bai_2_lan */
+
+/*Begin 17-04-2018 trungcq XLCYCMHENG_29323_toi_uu_hien_thi_bai_quiz_poll_ocm*/
+.cke_quiz_container {
+    margin: auto;
+    display:block;
+}
+.cke_poll_container {
+    margin: auto; 
+    display:block;
+}
+/*End 17-04-2018 trungcq XLCYCMHENG_29323_toi_uu_hien_thi_bai_quiz_poll_ocm*/
+/*Begin BangND XLCYCMHENG_31451_toi_uu_chuc_nang_loc_bai_theo_giai_dau */
+input[type="checkbox"] {vertical-align: middle}
+/*End BangND XLCYCMHENG_31451_toi_uu_chuc_nang_loc_bai_theo_giai_dau */
+/*Begin BangND 25-05-2018 XLCYCMHENG_31392_bo_sung_chuc_nang_thong_ke_tong_so_luong_bai_viet_theo_đieu_kien_loc*/
+.news_found_rows {display: inline-block;margin-right: 10px;font-weight: 700}
+.news_found_rows strong {color: red}
+.w98 {width: 90px}
+/*End BangND 25-05-2018 XLCYCMHENG_31392_bo_sung_chuc_nang_thong_ke_tong_so_luong_bai_viet_theo_đieu_kien_loc */
+
+/* Start duclv ocm_ds_xem_video */
+.form_input {
+    display: inline-block;
+    margin-right: 20px;
+}
+select[name=hdn_type_config] {
+    padding: 7px;
+    margin-left: 5px;
+}
+.div-btn-search-recommend {
+    display: inline-block;
+    margin-left: 10px;
+}
+.div-btn-search-recommend a.btn_grey {
+    padding: 7px;
+    margin-right: 2px;
+}
+tr#tr_lbale_selected_news_list td {
+    padding: 10px;
+    font-size: 14px;
+}
+#div_dsp_all_item .tbLabel *, #div_dsp_all_item td[valign=top] h3 {
+    font-size: 14px;
+    display: inline-block;
+}
+/* End duclv ocm_ds_xem_video */
+
+/* Begin 06-08-2018 : Trungcq XLCYCMHENG_32140_bo_sung_muc_luc_bai_viet*/
+.mucluc {
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+.muclucCtn {
+    padding: 20px;
+}
+.muclucTit {
+    text-align: center;
+}
+.muclucTit span {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.mucluc a {
+    color: #78b43d;
+    display: block;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 600;
+}
+.mucluc a:hover {
+    text-decoration: underline;
+}
+.stepMl {
+    padding-left: 15px;
+}
+.stepMl a {
+    position: relative;
+}
+.stepMl a:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    left: -15px;
+    top: 11px;
+    background-color: #78b43d;
+}
+.addInfo {
+    padding-left: 30px;
+}
+.addInfo .addInfoLk {
+    position: relative;
+}
+.addInfoLk:before {
+    position: absolute;
+    content: "";
+    display: block;
+    left: -15px;
+    top: 8px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #78b43d;
+}
+.mlh3, .mlh4, .mlh5 {
+    font-size: 16px;
+}
+.mlh3, .mlh4, .mlh5 {
+    display: block;
+    margin-top: 1.3em;
+    margin-bottom: 1.3em;
+}
+/* End 06-08-2018 : Trungcq XLCYCMHENG_32140_bo_sung_muc_luc_bai_viet*/
+/* Begin BangND 15-11-2018 XLCYCMHENG_33349_quan_tri_icon_hot_new_menu_ngang_header */
+.hidden {
+	display: none;
+}
+.frm-chk {
+	position: relative;
+	top: -6px;
+}
+/* End BangND 15-11-2018 XLCYCMHENG_33349_quan_tri_icon_hot_new_menu_ngang_header */
+/* Begin 12-12-2018 Trungcq - XLCYCMHENG_33447_bai_pr_doc_quyen */
+.div-combo{
+    width: 85%;
+    border: solid 1px #ccc;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background: #f8f8f8;
+    border-radius: 3px;
+    color: #666;
+}
+.div-combo label{
+	padding: 2px 0px;
+	display: inline-block;
+}
+/* End 12-12-2018 Trungcq - XLCYCMHENG_33447_bai_pr_doc_quyen */
+
+/*Begin XLCYCMHENG-34478 Review +  Test tối ưu chức năng Quản trị bài tường thuật thể thao - 4/4/2019 dangtq*/
+.diem b{
+	display: inline-block;
+	margin-top: 3px;
+}
+.tr_hide {display:none;}
+.ttbd-more {font-weight:bold; cursor: pointer;}
+/*End XLCYCMHENG-34478 Review +  Test tối ưu chức năng Quản trị bài tường thuật thể thao - 4/4/2019 dangtq*/
+/* Begin chỉnh sửa giao diện text video high light - dangtq 19/4/2019 */
+.vdhl{
+	display: flex;
+    margin-bottom: 10px;
+    width: 878px;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+    box-sizing: border-box;
+}
+.vdhl-title{
+	margin-right: 10px;
+    padding-top: 3px;
+}
+/* Begin chỉnh sửa giao diện text video high light - dangtq 19/4/2019 */
+/* End 10-05-2019 TuyenNT bo_sung_bang_thong_tin_tran_dau_bong_da_vao_trang_bai_viet */
+.ct {
+    text-align: center;
+}
+.fl {
+    float: left!important;
+}
+.fr {
+    float: right!important;
+}
+.atk .head img{
+	vertical-align: middle;
+}
+.atk .head span{
+	font-size: 15px;
+	color: initial;
+}
+.atk .head{
+	display: inline-block;
+	width: 100%;
+}
+.atk span{
+	font-size: 15px;
+}
+.atk .name{
+	font-weight: bold;
+}
+.atk .c1{
+	display: inline-block;
+    background-color: #39618a;
+    width: 49%;
+    height: 5px;
+}
+.atk .c2{
+	display: inline-block;
+    background-color: #77a2c6;
+    width: 50%;
+    height: 5px;
+}
+.atk{
+	width: 80%;
+    margin: 30px auto;
+}
+.box_atk {
+	width: 540px; 
+}
+.box_atk .name{
+	font-weight: normal;
+	font-size: 13px;
+}
+.flex{
+	display: flex;
+}
+.box_atk .number{
+	width: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+.box_atk .number:nth-child(1){
+	padding-right: 12px;
+}
+.box_atk .number:nth-child(3){
+	padding-left: 12px;
+}
+.box_atk .chart{
+	flex-grow: 1;
+}
+.txtLeft{
+	text-align: left;
+}
+.txtRight{
+	text-align: right;
+}
+/* End 10-05-2019 TuyenNT bo_sung_bang_thong_tin_tran_dau_bong_da_vao_trang_bai_viet */

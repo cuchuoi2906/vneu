@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>CKEditor</title>
+        <meta charset="utf-8">
+        <script src="../ckeditor.js"></script>
+    </head>
+    <body>
+    <textarea name="txt_body"></textarea>
+    <textarea name="txt_summary"></textarea>
+    <script>
+        CKEDITOR.replace( 'txt_body', {
+            customConfig: 'custom/standard_config.js'
+        });
+        CKEDITOR.replace( 'txt_summary', {
+            customConfig: 'custom/standard_config.js'
+        });
+        
+    </script>
+    <input type="button" value="insert" onclick="oEditor = CKEDITOR.instances.txt_summary;v_content = 'hehehe';oEditor.insertHtml(v_content);" />
+    </body>
+</html>

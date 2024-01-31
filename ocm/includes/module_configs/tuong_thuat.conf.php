@@ -1,0 +1,24 @@
+<?php
+$tuong_thuat_conf = array();
+$tuong_thuat_conf['so_ky_tu_ten_tuong_thuat'] = 100;
+$tuong_thuat_conf['so_ky_tu_ten_doi'] = 100;
+$tuong_thuat_conf['so_ky_tu_doi_hinh'] = 300;
+$tuong_thuat_conf['so_ky_tu_danh_sach_ghi_ban'] = 300;
+$tuong_thuat_conf['so_ky_tu_ty_le_cuoc'] = 200;
+$tuong_thuat_conf['so_ky_tu_thong_tin_tran_dau'] = 200;
+$tuong_thuat_conf['so_ky_tu_lich_thi_dau'] = 200;
+$tuong_thuat_conf['so_ky_tu_ket_qua'] = 200;
+$tuong_thuat_conf['so_ky_tu_ten_set'] = 20;
+$tuong_thuat_conf['so_ky_noi_dung_dau_bai'] = 2000;
+$tuong_thuat_conf['so_ky_noi_dung_cuoi_bai'] = 2000;
+$tuong_thuat_conf['so_ky_noi_dung_tuong_thuat'] = 3000;
+$tuong_thuat_conf['dung_luong_logo_bong_da'] = 51200;
+$tuong_thuat_conf['kich_thuoc_logo_bong_da'] = array(70, 70);
+$tuong_thuat_conf['dung_luong_logo_the_thao'] = 51200;
+$tuong_thuat_conf['kich_thuoc_logo_the_thao'] = array(100, 140);
+$tuong_thuat_conf['dinh_dang_video'] = 'mp4';
+$tuong_thuat_conf['dung_luong_video'] = 41943040; // 9.56 MB (ducnq chuyen 40M)
+$tuong_thuat_conf['dinh_dang_video_mobile'] = '3gp';
+$tuong_thuat_conf['dung_luong_video_mobile'] = 41943040; // 9.52 MB (ducnq chuyen 40M)
+$tuong_thuat_conf['dinh_dang_video_mobile_hd'] = 'mp4';
+$tuong_thuat_conf['dung_luong_video_mobile_hd'] = 41943040; // 11.2 MB (ducnq chuyen 40M)

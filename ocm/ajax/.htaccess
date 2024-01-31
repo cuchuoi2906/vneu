@@ -1,0 +1,17 @@
+#AuthType Basic
+#AuthName "Enter your User & Password"
+#require valid-user
+AddDefaultCharset Utf-8
+php_value upload_max_filesize 300M
+php_value post_max_size 300M
+php_flag display_errors Off
+php_value memory_limit 256M  
+php_value max_input_vars 3000
+php_value session.cookie_lifetime 28800
+php_value session.gc_maxlifetime 28800
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !server-status
+RewriteRule !\.(js|ico|gif|jpg|JPG|png|css|swf|xls|doc|ppt|wmv|avi|xml|htc|txt|config.php|flv)$ index.php [L,QSA]
