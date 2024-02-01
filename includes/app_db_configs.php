@@ -15,14 +15,14 @@ $fwDbConfig = array();
 $fwDbConfig['read']['server'] = '103.28.36.205';
 $fwDbConfig['read']['username'] = 'nhoffcor_vneu';
 $fwDbConfig['read']['password'] = '[75=+bs_m?GK';
-$fwDbConfig['read']['database'] = 'nhoffcor_vneu';
+$fwDbConfig['read']['database'] = 'nhoffcor_dev_vneu';
 
 $fwDbConfig['write']['server'] = '103.28.36.205';
 $fwDbConfig['write']['username'] = 'nhoffcor_vneu';
 $fwDbConfig['write']['password'] = '[75=+bs_m?GK';
-$fwDbConfig['write']['database'] = 'nhoffcor_vneu';
+$fwDbConfig['write']['database'] = 'nhoffcor_dev_vneu';
 
 $fwDbConfig['source']['server'] = '103.28.36.205';
 $fwDbConfig['source']['username'] = 'nhoffcor_vneu';
 $fwDbConfig['source']['password'] = '[75=+bs_m?GK';
-$fwDbConfig['source']['database'] = 'nhoffcor_vneu';
+$fwDbConfig['source']['database'] = 'nhoffcor_dev_vneu';

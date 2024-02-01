@@ -215,7 +215,14 @@ class news_block extends Fw24H_Block
 			}
             $v_status = intval($this->_POST['sel_publish']);
 			$v_news_id = be_update_news($this->_POST, $p_news_id, $_SESSION['user_id'], $v_status);
+            var_dump($v_news_id);die;
             if ($v_news_id > 0) {
+                be_update_news_langue($v_news_id
+                        , $this->_POST['txt_title_de'] 
+                        ,$this->_POST['txt_summary']
+                        ,$this->_POST['txt_short_summary']
+                        , $this->_POST['txt_body_de']
+                        , 'de');
                 js_message('Cập nhật bài viết thành công!');
                 if ($this->_POST['goback']) {
                     js_redirect(fw24h_base64_url_decode($_POST['goback']));
