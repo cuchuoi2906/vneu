@@ -215,7 +215,6 @@ class news_block extends Fw24H_Block
 			}
             $v_status = intval($this->_POST['sel_publish']);
 			$v_news_id = be_update_news($this->_POST, $p_news_id, $_SESSION['user_id'], $v_status);
-            var_dump($v_news_id);die;
             if ($v_news_id > 0) {
                 be_update_news_langue($v_news_id
                         , $this->_POST['txt_title_de'] 

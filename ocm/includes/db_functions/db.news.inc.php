@@ -808,7 +808,6 @@ function be_update_news($p_arr, $p_news_id, $p_user_id, $p_status=0)
     //  03-02-2021 DanNC end bo sung cat anh ty le 3:2
 	$sql = "CALL be_update_news($v_str_params)";
 	$rs = Gnud_Db_write_query($sql);
-    var_dump($rs);
     return $rs[0]['news_id'];
 }
 
@@ -2104,6 +2103,7 @@ function be_get_all_news(
     ,$p_news_name
 ){
     $sql = "call be_get_all_news($p_news_id,$p_category_id,$p_user_id,'$p_status_list','$p_news_name')";
+    //echo $sql;die;
 	$rs = Gnud_Db_read_query($sql); 
     return $rs;
 }
@@ -2141,7 +2141,7 @@ function be_update_news_langue(
             ,'$p_body'
             ,'$p_langue'
         )";
-    echo $sql;die;
+    //echo $sql;die;
 	$rs = Gnud_Db_write_query($sql); 
 	return $rs;
 }
