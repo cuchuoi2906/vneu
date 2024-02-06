@@ -18,6 +18,11 @@ function fe_bai_viet_theo_id($p_news_id=0)
     if($p_news_id <=0){return $rs;}
     $sql = "call fe_bai_viet_theo_id($p_news_id)";
     $rs = Gnud_Db_read_query($sql);
+    global $v_langue_code;
+    if($v_langue_code == 'de'){
+        $rs[0]['Title']  = $rs[0]['Title_langue'];
+        $rs[0]['Body']  = $rs[0]['Body_langue'];
+    }
     return $rs[0];
 }
 /**

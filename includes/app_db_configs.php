@@ -26,3 +26,8 @@ $fwDbConfig['source']['server'] = '103.28.36.205';
 $fwDbConfig['source']['username'] = 'nhoffcor_vneu';
 $fwDbConfig['source']['password'] = '[75=+bs_m?GK';
 $fwDbConfig['source']['database'] = 'nhoffcor_dev_vneu';
+
+$fwDbConfig['read']['server'] = '103.28.36.205';
+$fwDbConfig['read']['username'] = 'nhoffcor_vneu';
+$fwDbConfig['read']['password'] = '[75=+bs_m?GK';
+$fwDbConfig['read']['database'] = 'nhoffcor_dev_vneu';

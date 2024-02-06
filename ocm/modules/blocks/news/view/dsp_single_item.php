@@ -35,7 +35,7 @@
                     <tr>
                         <td width="90" class="tbLabel" height="30"><b>Tiêu đề bài tiếng Đức</b> <span class="redText">(*)</span></td>
                         <td>
-                            <input type="text" id="txt_title_de" name="txt_title_de" value="<?php echo html_quote_decode($v_news['Title_de']); ?>" style="width:80%" />
+                            <input type="text" id="txt_title_de" name="txt_title_de" value="<?php echo html_quote_decode($v_news['Title_langue']); ?>" style="width:80%" />
                             <span id="title_countdown"></span>
                             <script type="text/javascript">setCountdown('txt_title_de', 255, 'title_de_countdown')</script>
                         </td>
@@ -106,9 +106,9 @@
 						<td class="padBot">
 							<?php
                             if ($v_news_type != 'magazine') {
-                                loadEditor('txt_body_de', $v_news['Body_de'], 700, 325, 'edit_bong_da_truc_tiep');
+                                loadEditor('txt_body_de', $v_news['Body_langue'], 700, 325, 'edit_bong_da_truc_tiep');
                             }else{
-                                loadEditor('txt_body_de', $v_news['Body_de'], 700, 325, 'default',true,'magazine');
+                                loadEditor('txt_body_de', $v_news['Body_langue'], 700, 325, 'default',true,'magazine');
                             }
 							?>
 						</td>

@@ -35,7 +35,7 @@ define('GOI_SP_KHI_KHONG_CO_KEY_DATA', false); // Bat/tat che do goi SP khi khon
 define('GOI_SEO_CHI_TIET_TRONG_BLOCK', false); // Bat/tat che do goi SEO chi tiet trong block
 
 define('BASE_URL', '/'); // duong dan tuong doi thu muc goc (them vao truoc cac duong dan kieu ajax/...)
-define('BASE_URL_FOR_PUBLIC',  'https://vneu.vn/'); // domain SEO
+define('BASE_URL_FOR_PUBLIC',  'https://dev.vneu.vn/'); // domain SEO
 define('NAME_THIET_BI_MOBILE', 'mobile');
 define('NAME_BOT_MOBILE', 'botmobi');
 define('NAME_THIET_BI_PC', 'pc');
@@ -43,8 +43,8 @@ define('NAME_BOT_PC', 'botpc');
 define('NAME_THIET_BI_TABLET', 'tablet');
 define('NAME_THIET_BI_AMP', 'amp');
 define('NAME_BOT_AMP', 'botamp');
-define('IMAGE_STATIC', 'https://vneu.vn/');
-define('IMAGE_NEWS', 'https://vneu.vn/');
+define('IMAGE_STATIC', 'https://dev.vneu.vn/');
+define('IMAGE_NEWS', 'https://dev.vneu.vn/');
 define('MAX_REPLACE_ALT_IMG', 70); // Số lượng tối đa cho phép thay thế alt ảnh trong bài viết
 define('USE_IMAGE_STATIC',true); // c?u hình su dung img statis
 define('SO_LUONG_BAI_VIET_TRONG_KEY_DATA',200);

@@ -27,6 +27,13 @@ if($v_device_global=='amp'){
     $_SERVER['SERVER_REGION'] = 'HN';
 }
 
+global $v_langue_code;
+$v_langue_code = 'vi';
+// Kiểm tra truyền thiết bị trên đường dẫn 
+if (isset($_GET['lang']) && $_GET['lang'] != '') {
+    $v_langue_code = index_fw24h_replace_bad_char($_GET['lang']);
+}
+
 $_GET['SERVER_REGION'] = $_SERVER['SERVER_REGION']; // Luu cache theo domain
 
 ////////////////////////////////////////////// HẾT XỬ LÝ VÙNG MIỀN ////////////////////////////////////////////////////	

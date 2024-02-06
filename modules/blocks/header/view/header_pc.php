@@ -34,7 +34,21 @@
             .dropdown:hover .dropdown-menu {
                 display: block;
             }
-        </style>
+            .btn-language {
+	            top:12px;
+	        }
+	        .btn-language img {
+	            transition: transform 0.3s ease;
+	        }
+
+	        .btn-group:hover .dropdown-menu {
+	            display: block;
+	        }
+
+	        .dropdown-menu {
+	            display: none;
+	        }
+	    </style>
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-11XCHNJ43V"></script>
 		<script>
@@ -126,6 +140,15 @@
 					</ul>
 				</nav>
 				<!-- /Navigation -->
+				<div class="btn-group">
+			        <button type="button" class="btn btn-default btn-language">
+			        	<img src="<?php echo html_image(IMAGE_NEWS.'/images/internet.png',false); ?>" alt="">
+			        </button>
+			        <ul class="dropdown-menu">
+			            <li><a href="?lang=vi"><img src="<?php echo html_image(IMAGE_NEWS.'/images/vietnam.png',false); ?>" alt="Vietnamese"> Vi</a></li>
+			            <li><a href="?lang=de"><img src="<?php echo html_image(IMAGE_NEWS.'/images/germany.png',false); ?>" alt="German"> De</a></li>
+			        </ul>
+			    </div>
 
 			</div>
 		</header>

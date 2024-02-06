@@ -219,3 +219,9 @@ Stack trace:
 [28-Oct-2023 16:04:36 Asia/Ho_Chi_Minh] PHP Fatal error:  PROCEDURE nhoffcor_vneu.be_delete_news_single does not exist###call be_delete_news_single(1) in /home/nhoffcor/public_html/ocm/gnud/db/mysqli.inc.php on line 62
 [28-Oct-2023 16:20:44 Asia/Ho_Chi_Minh] PHP Fatal error:  PROCEDURE nhoffcor_vneu.be_delete_news_single does not exist###call be_delete_news_single(1) in /home/nhoffcor/public_html/ocm/gnud/db/mysqli.inc.php on line 62
 [28-Oct-2023 16:20:51 Asia/Ho_Chi_Minh] PHP Fatal error:  PROCEDURE nhoffcor_vneu.be_delete_news_single does not exist###call be_delete_news_single(1) in /home/nhoffcor/public_html/ocm/gnud/db/mysqli.inc.php on line 62
+[02-Feb-2024 08:03:12 Asia/Ho_Chi_Minh] PHP Fatal error:  1044 in /home/nhoffcor/dev_vneu/ocm/gnud/db/mysqli.inc.php on line 12
+[02-Feb-2024 08:03:14 Asia/Ho_Chi_Minh] PHP Fatal error:  1044 in /home/nhoffcor/dev_vneu/ocm/gnud/db/mysqli.inc.php on line 12
+[02-Feb-2024 08:07:39 Asia/Ho_Chi_Minh] PHP Fatal error:  1044 in /home/nhoffcor/dev_vneu/ocm/gnud/db/mysqli.inc.php on line 12
+[02-Feb-2024 08:07:52 Asia/Ho_Chi_Minh] PHP Fatal error:  1044 in /home/nhoffcor/dev_vneu/ocm/gnud/db/mysqli.inc.php on line 12
+[02-Feb-2024 08:15:07 Asia/Ho_Chi_Minh] PHP Fatal error:  1044 in /home/nhoffcor/dev_vneu/ocm/gnud/db/mysqli.inc.php on line 12
+[02-Feb-2024 08:15:09 Asia/Ho_Chi_Minh] PHP Fatal error:  1044 in /home/nhoffcor/dev_vneu/ocm/gnud/db/mysqli.inc.php on line 12
